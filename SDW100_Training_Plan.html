@@ -738,8 +738,178 @@
             {week: 8, phase: 'phase1', dates: '20th-26th Oct', hours: '7.0', 
              sun: '1:00 Pure Z1 + 4x30s strides', mon: 'REST', tue: '1:00 Pure Z1 + strides', 
              wed: '1:00 Pure Z1', thu: 'REST', fri: '2:00 Long Pure Z1 (35min hiking)', sat: '2:00 Pure Z1', 
-             notes: 'RECOVERY WEEK - Absorb adaptations from base phase.', type: 'recovery'}
-        ];
+             notes: 'RECOVERY WEEK - Absorb adaptations from base phase.', type: 'recovery'},
+            
+            // Phase 2: AeT Development (Weeks 9-16)
+            {week: 9, phase: 'phase2', dates: '27th Oct-2nd Nov', hours: '8.5', 
+             sun: '1:00 Pure Z1 + 4x4min Z3 (2min rec)', mon: 'REST', tue: '1:00 AeT Dev (6x6min @144bpm)', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:00 Long Pure Z1 (55min hiking)', sat: '2:30 Pure Z1 (B2B)', 
+             notes: 'Introduce AeT development and B2B training carefully.', type: 'normal'},
+            
+            {week: 10, phase: 'phase2', dates: '3rd-9th Nov', hours: '9.0', 
+             sun: '1:00 Pure Z1 + 5x3min Z3 (90s rec)', mon: 'REST', tue: '1:00 AeT Dev (4x10min @144bpm)', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:15 Long Pure Z1 (60min hiking)', sat: '2:45 Pure Z1 (B2B)', 
+             notes: 'Build AeT capacity. Monitor HR drift in AeT sessions.', type: 'normal'},
+            
+            {week: 11, phase: 'phase2', dates: '10th-16th Nov', hours: '8.0', 
+             sun: '1:00 Pure Z1 recovery', mon: 'REST', tue: '45min Pure Z1 easy', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '45min Easy Z1 (pre-race)', sat: 'RACE: East Devon 8 Trigs Ultra (53K)', 
+             notes: 'C RACE WEEK - East Devon 8 Trigs Ultra. Navigation practice.', type: 'devon-race'},
+            
+            {week: 12, phase: 'phase2', dates: '17th-23rd Nov', hours: '9.5', 
+             sun: '1:00 Pure Z1 + 8x2min Z3 (60s rec)', mon: 'REST', tue: '1:00 AeT Dev (2x20min @144bpm)', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:30 Long Pure Z1 (70min hiking)', sat: '3:00 Pure Z1 (B2B)', 
+             notes: 'Post-race integration. Resume AeT development.', type: 'normal'},
+            
+            {week: 13, phase: 'phase2', dates: '24th-30th Nov', hours: '10.0', 
+             sun: '1:00 AEROBIC DECOUPLING TEST + 6x90s Z3', mon: 'REST', tue: '1:00 AeT Dev (4x8min @144bpm)', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:45 Long Pure Z1 (75min hiking)', sat: '3:15 Pure Z1 (B2B)', 
+             notes: 'TESTING WEEK - Compare to Week 5. Assess AeT progress.', type: 'testing'},
+            
+            {week: 14, phase: 'phase2', dates: '1st-7th Dec', hours: '10.5', 
+             sun: '1:00 Pure Z1 + 10x90s Z3 (45s rec)', mon: 'REST', tue: '1:00 AeT Dev (1x30min @144bpm)', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '4:00 Long Pure Z1 (80min hiking)', sat: '3:30 Pure Z1 (B2B)', 
+             notes: 'Longer AeT blocks. Building endurance at threshold.', type: 'normal'},
+            
+            {week: 15, phase: 'phase2', dates: '8th-14th Dec', hours: '11.0', 
+             sun: '1:00 Pure Z1 + 5x4min Z3 (2min rec)', mon: 'REST', tue: '1:00 AeT Dev (3x10min @144bpm)', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '4:15 Long Pure Z1 (85min hiking)', sat: '3:45 Pure Z1 (B2B)', 
+             notes: 'Peak AeT development phase. Monitor fatigue closely.', type: 'normal'},
+            
+            {week: 16, phase: 'phase2', dates: '15th-21st Dec', hours: '8.5', 
+             sun: '1:00 Pure Z1 + 4x30s strides', mon: 'REST', tue: '1:00 Pure Z1 + strides', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:00 Long Pure Z1 (60min hiking)', sat: '2:30 Pure Z1', 
+             notes: 'RECOVERY WEEK - Prepare for Christmas period.', type: 'recovery'},
+            
+            // Phase 3: Christmas Maintenance (Weeks 17-20)
+            {week: 17, phase: 'phase3', dates: '22nd-28th Dec', hours: '7.0', 
+             sun: '1:00 Pure Z1', mon: 'REST', tue: '1:00 Pure Z1 + strides', 
+             wed: 'REST (Christmas Day)', thu: '1:00 Pure Z1 (Boxing Day)', fri: 'REST', sat: '3:00 Long Pure Z1 (45min hiking)', 
+             notes: 'Christmas Week - maintain fitness, enjoy festivities.', type: 'christmas'},
+            
+            {week: 18, phase: 'phase3', dates: '29th Dec-4th Jan', hours: '7.5', 
+             sun: '1:00 Pure Z1', mon: 'REST', tue: 'REST (New Years Day)', 
+             wed: '1:00 Pure Z1 + strides', thu: '1:00 Pure Z1', fri: 'REST', sat: '3:30 Long Pure Z1 (50min hiking)', 
+             notes: 'New Year Week - gradual return to training.', type: 'christmas'},
+            
+            {week: 19, phase: 'phase3', dates: '5th-11th Jan', hours: '8.0', 
+             sun: '1:00 Pure Z1 + 4x2min Z3 (90s rec)', mon: 'REST', tue: '1:00 Pure Z1 + strides', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:00 Long Pure Z1 (55min hiking)', sat: '2:30 Pure Z1', 
+             notes: 'Build restart - reintroduce intensity carefully.', type: 'normal'},
+            
+            {week: 20, phase: 'phase3', dates: '12th-18th Jan', hours: '8.5', 
+             sun: '1:00 Pure Z1 + 5x2min Z3 (75s rec)', mon: 'REST', tue: '1:00 AeT Dev (4x6min @144bpm)', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:15 Long Pure Z1 (60min hiking)', sat: '2:45 Pure Z1 (B2B)', 
+             notes: 'Resume AeT work. Prepare for serious build phase.', type: 'normal'},
+            
+            // Phase 4: Serious Build Phase (Weeks 21-28)
+            {week: 21, phase: 'phase4', dates: '19th-25th Jan', hours: '9.0', 
+             sun: '1:00 Pure Z1 + 6x3min Z3 (90s rec)', mon: 'REST', tue: '1:00 AeT Dev (3x8min @144bpm)', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:30 Long Pure Z1 (65min hiking)', sat: '3:00 Pure Z1 (B2B)', 
+             notes: 'Serious build begins. Maintain polarized discipline.', type: 'normal'},
+            
+            {week: 22, phase: 'phase4', dates: '26th Jan-1st Feb', hours: '8.5', 
+             sun: '1:00 Pure Z1 recovery', mon: 'REST', tue: '45min Pure Z1 easy', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '45min Easy Z1 (pre-FKT)', sat: 'FKT ATTEMPT: East Devon Route (50K+)', 
+             notes: 'FKT CHALLENGE WEEK - East Devon 50K+ attempt.', type: 'devon-race'},
+            
+            {week: 23, phase: 'phase4', dates: '2nd-8th Feb', hours: '9.5', 
+             sun: '1:00 Pure Z1 + 10x90s Z3 (45s rec)', mon: 'REST', tue: '1:00 AeT Dev (1x25min @144bpm)', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:45 Long Pure Z1 (70min hiking)', sat: '3:15 Pure Z1 (B2B)', 
+             notes: 'Post-FKT recovery. Resume build progression.', type: 'normal'},
+            
+            {week: 24, phase: 'phase4', dates: '9th-15th Feb', hours: '10.0', 
+             sun: '1:00 Pure Z1 + 8x3min Z3 (75s rec)', mon: 'REST', tue: '1:00 AeT Dev (2x15min @144bpm)', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '4:00 Long Pure Z1 (75min hiking)', sat: '3:30 Pure Z1 (B2B)', 
+             notes: 'Structured build progression. Monitor recovery.', type: 'normal'},
+            
+            {week: 25, phase: 'phase4', dates: '16th-22nd Feb', hours: '10.5', 
+             sun: '1:00 AEROBIC DECOUPLING TEST + 8x90s Z3', mon: 'REST', tue: '1:00 AeT Dev (3x10min @144bpm)', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '4:15 Long Pure Z1 (80min hiking)', sat: '3:45 Pure Z1 (B2B)', 
+             notes: 'TESTING WEEK - Mid-build assessment. Check progress.', type: 'testing'},
+            
+            {week: 26, phase: 'phase4', dates: '23rd Feb-1st Mar', hours: '11.0', 
+             sun: '1:00 Pure Z1 + 6x5min Z3 (2min rec)', mon: 'REST', tue: '1:00 AeT Dev (1x35min @144bpm)', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '4:30 Long Pure Z1 (85min hiking)', sat: '4:00 Pure Z1 (B2B)', 
+             notes: 'Peak build intensity. Longer Z3 intervals introduced.', type: 'normal'},
+            
+            {week: 27, phase: 'phase4', dates: '2nd-8th Mar', hours: '11.5', 
+             sun: '1:00 Pure Z1 + 10x2min Z3 (45s rec)', mon: 'REST', tue: '1:00 AeT Dev (2x20min @144bpm)', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '4:45 Long Pure Z1 (90min hiking)', sat: '4:15 Pure Z1 (B2B)', 
+             notes: 'Peak build volume. Prepare for recovery week.', type: 'normal'},
+            
+            {week: 28, phase: 'phase4', dates: '9th-15th Mar', hours: '9.0', 
+             sun: '1:00 Pure Z1 + 4x90s Z3 (90s rec)', mon: 'REST', tue: '1:00 Pure Z1 + strides', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:30 Long Pure Z1 (60min hiking)', sat: '3:00 Pure Z1', 
+             notes: 'RECOVERY WEEK - Absorb build adaptations.', type: 'recovery'},
+            
+            // Phase 5: Peak Phase (Weeks 29-35)
+            {week: 29, phase: 'phase5', dates: '16th-22nd Mar', hours: '12.0', 
+             sun: '1:00 Pure Z1 + 5x6min Z3 (2min rec)', mon: 'REST', tue: '1:15 AeT Dev (1x45min @144bpm)', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '5:00 Long Pure Z1 (100min hiking)', sat: '4:30 Pure Z1 (B2B)', 
+             notes: 'Peak phase begins. Race-specific endurance focus.', type: 'peak'},
+            
+            {week: 30, phase: 'phase5', dates: '23rd-29th Mar', hours: '12.5', 
+             sun: '1:00 Pure Z1 + 8x4min Z3 (90s rec)', mon: 'REST', tue: '1:15 AeT Dev (3x15min @144bpm)', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '5:15 Long Pure Z1 (105min hiking)', sat: '4:45 Pure Z1 (B2B)', 
+             notes: 'High volume week. Monitor fatigue carefully.', type: 'peak'},
+            
+            {week: 31, phase: 'phase5', dates: '30th Mar-5th Apr', hours: '10.0', 
+             sun: '1:00 Pure Z1 recovery', mon: 'REST', tue: '45min Pure Z1 easy', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '45min Easy Z1 + race prep', sat: 'RACE: Southwest/Wales Ultra (50M-100K)', 
+             notes: 'B RACE WEEK - Southwest/Wales Ultra dress rehearsal.', type: 'devon-race'},
+            
+            {week: 32, phase: 'phase5', dates: '6th-12th Apr', hours: '13.0', 
+             sun: '1:00 Pure Z1 + 6x8min Z3 (2min rec)', mon: 'REST', tue: '1:15 AeT Dev (1x50min @144bpm)', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '5:30 Long Pure Z1 (110min hiking)', sat: '5:00 Pure Z1 (B2B)', 
+             notes: 'Post-B race integration. Peak volume week.', type: 'peak'},
+            
+            {week: 33, phase: 'phase5', dates: '13th-19th Apr', hours: '13.5', 
+             sun: '1:00 Pure Z1 + 10x3min Z3 (60s rec)', mon: 'REST', tue: '1:15 AeT Dev (2x25min @144bpm)', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '5:45 Long Pure Z1 (115min hiking)', sat: '5:15 Pure Z1 (B2B)', 
+             notes: 'PEAK VOLUME WEEK - Maximum training load.', type: 'peak'},
+            
+            {week: 34, phase: 'phase5', dates: '20th-26th Apr', hours: '12.0', 
+             sun: '1:00 AEROBIC DECOUPLING TEST + 6x3min Z3', mon: 'REST', tue: '1:00 AeT Dev (1x40min @144bpm)', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '5:00 Long Pure Z1 (100min hiking)', sat: '4:30 Pure Z1 (B2B)', 
+             notes: 'TESTING WEEK - Final fitness assessment.', type: 'testing'},
+            
+            {week: 35, phase: 'phase5', dates: '27th Apr-3rd May', hours: '10.5', 
+             sun: '1:00 Pure Z1 + 4x5min Z3 (2min rec)', mon: 'REST', tue: '1:00 Pure Z1 + strides', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '4:00 Long Pure Z1 (80min hiking)', sat: '3:30 Pure Z1', 
+             notes: 'RECOVERY WEEK - Peak phase completion.', type: 'recovery'},
+            
+            // Phase 6: Taper Phase (Weeks 36-41)
+            {week: 36, phase: 'phase6', dates: '4th-10th May', hours: '9.0', 
+             sun: '1:00 Pure Z1 + 6x2min Z3 (90s rec)', mon: 'REST', tue: '1:00 Pure Z1 + 6x30s strides', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:30 Long Pure Z1 (60min hiking)', sat: '3:00 Pure Z1', 
+             notes: 'Taper begins. Maintain intensity, reduce volume.', type: 'taper'},
+            
+            {week: 37, phase: 'phase6', dates: '11th-17th May', hours: '8.0', 
+             sun: '1:00 Pure Z1 + 5x90s Z3 (90s rec)', mon: 'REST', tue: '1:00 Pure Z1 + strides', 
+             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:00 Long Pure Z1 (50min hiking)', sat: '2:30 Pure Z1', 
+             notes: 'Continued taper. Focus on race preparation.', type: 'taper'},
+            
+            {week: 38, phase: 'phase6', dates: '18th-24th May', hours: '7.0', 
+             sun: '1:00 Pure Z1 + 4x90s Z3 (2min rec)', mon: 'REST', tue: '45min Pure Z1 + strides', 
+             wed: '45min Pure Z1', thu: 'REST', fri: '2:30 Long Pure Z1 (40min hiking)', sat: '2:00 Pure Z1', 
+             notes: 'Deeper taper. Race logistics preparation.', type: 'taper'},
+            
+            {week: 39, phase: 'phase6', dates: '25th-31st May', hours: '6.0', 
+             sun: '45min Pure Z1 + 4x60s Z3 (90s rec)', mon: 'REST', tue: '45min Pure Z1 + strides', 
+             wed: '45min Pure Z1', thu: 'REST', fri: '2:00 Easy Pure Z1 (30min hiking)', sat: '1:30 Pure Z1', 
+             notes: 'Final preparation. Equipment and nutrition checks.', type: 'taper'},
+            
+            {week: 40, phase: 'phase6', dates: '1st-7th Jun', hours: '4.5', 
+             sun: '45min Pure Z1 + 3x45s Z3 (2min rec)', mon: 'REST', tue: '30min Pure Z1 + 4x20s pickups', 
+             wed: '30min Pure Z1', thu: 'REST', fri: '1:30 Easy Pure Z1 (20min hiking)', sat: '1:00 Pure Z1', 
+             notes: 'Race week minus one. Final sharpening.', type: 'taper'},
+            
+            {week: 41, phase: 'phase6', dates: '8th-13th Jun', hours: '3.0', 
+             sun: '45min Pure Z1 + 4x30s strides', mon: 'REST', tue: '30min Pure Z1 + 3x20s pickups', 
+             wed: '30min Pure Z1', thu: 'REST', fri: '30min Pure Z1 shakeout OR REST', sat: 'RACE DAY - SDW100!', 
+             notes: 'RACE WEEK - South Downs Way 100. Execute race plan!', type: 'race'}
+                    ];
         
         var currentPhase = 'all';
         
@@ -916,3 +1086,4 @@
     </script>
 </body>
 </html>
+
