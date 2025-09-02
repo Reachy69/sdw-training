@@ -4,17 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SDW 100 Training Plan</title>
-    
-    <!-- PWA Configuration - Inline -->
-    <meta name="theme-color" content="#1a4c96">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="SDW 100 Training">
-    
-    <!-- Inline Manifest -->
-    <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIlNEVyAxMDAgVHJhaW5pbmcgUGxhbiIsCiAgInNob3J0X25hbWUiOiAiU0RXIFRyYWluaW5nIiwKICAiZGVzY3JpcHRpb24iOiAiU291dGggRG93bnMgV2F5IDEwMCBNaWxlIFRyYWluaW5nIFBsYW4gLSBVcGhpbGwgQXRobGV0ZSBNZXRob2RvbG9neSIsCiAgInN0YXJ0X3VybCI6ICIuLyIsCiAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsCiAgImJhY2tncm91bmRfY29sb3IiOiAiI2Y1ZjVmNSIsCiAgInRoZW1lX2NvbG9yIjogIiMxYTRjOTYiLAogICJvcmllbnRhdGlvbiI6ICJwb3J0cmFpdC1wcmltYXJ5IiwKICAic2NvcGUiOiAiLi8iLAogICJpY29ucyI6IFsKICAgIHsKICAgICAgInNyYyI6ICJkYXRhOmltYWdlL3N2Zyt4bWw7YmFzZTY0LFBITjJaeUIzYVdSMGFEMGlNVGt5SWlCb1pXbG5hSFE5SWpFNU1pSWdkbWxsZDBKdmVEMGlNQ0F3SURFNU1pQXhPVElpSUdacGJHdzlJaU14WVRSak9UWWlQZ29nSUR4eVpXTjBJSGRwWkhSb1BTSXhPVElpSUdobGFXZG9kRDBpTVRreUlpQm1hV3hzUFNJalptWm1JaUF2UGdvZ0lEeDBaWGgwSUhnOUlqazJJaUI1UFNJeE16WWlJSFJsZUhRdFlXNWphRzl5UFNKdGFXUmtiR1VpSUdadmJuUXRjMmw2WlQwaU5EQWlJR1pwYkd3OUluZG9hWFJsSWo1VFJGY2dNVEF3UEM5MFpYaDBQZ29nSUR4MFpYaDBJSGc5SWpJNElpQjVQU0l4TlRZaUlIUmxlSFF0WVc1amFHOXlQU0p0YVdSa2JHVWlJR1p2Ym5RdGMybDZaVDBpTWpBaUlHWnBiR3c5SW5kb2FYUmxJajVVY21GcGJtbHVaejB2ZEdWNGRENThMM04yWnowaUlpQjNhV1IwYUQwaU1Ua3lJaUJvWldsbmFIUTlJakU1TWlJZ2RtbGxkMEp2ZUQwaU1DQXdJREU1TWlBeE9USWlJR1pwYkd3OUlpTXhZVFJqT1RZaVBnPT0iLAogICAgICAic2l6ZXMiOiAiMTkyeDE5MiIsCiAgICAgICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiCiAgICB9LAogICAgewogICAgICAic3JjIjogImRhdGE6aW1hZ2Uvc3ZnK3htbDtiYXNlNjQsUEhOMlp5QjNhV1IwYUQwaU5URXlJaUJvWldsbmFIUTlJalV4TWlJZ2RtbGxkMEp2ZUQwaU1DQXdJRFV4TWlBMU1USWlJR1pwYkd3OUlpTXhZVFJqT1RZaVBnb2dJRHh5WldOMElIZHBaSFJvUFNJMU1USWlJR2hsYVdkb2REMGlOVEV5SWlCbWFXeHNQU0lqWm1abUlpQXZQZ29nSUR4MFpYaDBJSGc5SWpJMU5pSWdlVDBpTXpJNElpQjBaWGgwTFdGdVkyaHZjajBpYldsa1pHeGxJaUJtYjI1MExYTnBlbVU5SWpneElpQm1hV3hzUFNKM2FHbDBaU0krVTBSWElERXdNRHd2ZEdWNGRENDhMM04yWno9PSIsCiAgICAgICJzaXplcyI6ICI1MTJ4NTEyIiwKICAgICAgInR5cGUiOiAiaW1hZ2Uvc3ZnK3htbCIKICAgIH0KICBdCn0=">
-    
-    <!-- Simple SVG icons inline -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -282,16 +271,6 @@
             color: #008b00;
         }
         
-        .phase-header {
-            background: linear-gradient(135deg, #1a4c96, #2d5aa0);
-            color: white;
-            padding: 15px;
-            margin: 20px 0 10px 0;
-            border-radius: 8px;
-            font-weight: bold;
-            text-align: center;
-        }
-        
         .legend {
             display: flex;
             flex-wrap: wrap;
@@ -344,6 +323,12 @@
         
         .devon-export-btn:hover {
             background: #006400;
+        }
+        
+        .progress-checkbox {
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
         }
         
         @media (max-width: 768px) {
@@ -463,8 +448,8 @@
         </table>
     </div>
     
-    <div class="fkt-appendix" id="fktAppendix" style="display: none;">
-        <div class="phase-header">
+    <div style="display: none;" id="fktAppendix">
+        <div style="background: linear-gradient(135deg, #1a4c96, #2d5aa0); color: white; padding: 15px; margin: 20px 0 10px 0; border-radius: 8px; font-weight: bold; text-align: center;">
             FKT CHALLENGE APPENDIX
         </div>
         
@@ -714,8 +699,7 @@
     </div>
 
     <script>
-        const trainingData = [
-            // Phase 1: Aerobic Base Development (Weeks 1-8) - Conservative progression
+        var trainingData = [
             {week: 1, phase: 'phase1', dates: '1st-7th Sep', hours: '6.0', 
              sun: '1:00 Pure Z1 (TRAINING STARTS)', mon: 'REST', tue: '1:00 Pure Z1 + 4x30s strides', 
              wed: '1:00 Pure Z1', thu: 'REST', fri: '1:30 Long Pure Z1 (20min hiking)', sat: '1:30 Pure Z1', 
@@ -754,213 +738,36 @@
             {week: 8, phase: 'phase1', dates: '20th-26th Oct', hours: '7.0', 
              sun: '1:00 Pure Z1 + 4x30s strides', mon: 'REST', tue: '1:00 Pure Z1 + strides', 
              wed: '1:00 Pure Z1', thu: 'REST', fri: '2:00 Long Pure Z1 (35min hiking)', sat: '2:00 Pure Z1', 
-             notes: 'RECOVERY WEEK - Absorb adaptations from base phase.', type: 'recovery'},
-            
-            // Phase 2: AeT Development (Weeks 9-16) - More gradual progression
-            {week: 9, phase: 'phase2', dates: '27th Oct-2nd Nov', hours: '8.5', 
-             sun: '1:00 Pure Z1 + 4x4min Z3 (2min rec)', mon: 'REST', tue: '1:00 AeT Dev (6x6min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:00 Long Pure Z1 (55min hiking)', sat: '2:30 Pure Z1 (B2B)', 
-             notes: 'Introduce AeT development and B2B training carefully.', type: 'normal'},
-            
-            {week: 10, phase: 'phase2', dates: '3rd-9th Nov', hours: '9.0', 
-             sun: '1:00 Pure Z1 + 5x3min Z3 (90s rec)', mon: 'REST', tue: '1:00 AeT Dev (4x10min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:15 Long Pure Z1 (60min hiking)', sat: '2:45 Pure Z1 (B2B)', 
-             notes: 'Build AeT capacity. Monitor HR drift in AeT sessions.', type: 'normal'},
-            
-            {week: 11, phase: 'phase2', dates: '10th-16th Nov', hours: '8.0', 
-             sun: '1:00 Pure Z1 recovery', mon: 'REST', tue: '45min Pure Z1 easy', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '45min Easy Z1 (pre-race)', sat: 'RACE: East Devon 8 Trigs Ultra (53K)', 
-             notes: 'C RACE WEEK - East Devon 8 Trigs Ultra. Navigation practice.', type: 'devon-race'},
-            
-            {week: 12, phase: 'phase2', dates: '17th-23rd Nov', hours: '9.5', 
-             sun: '1:00 Pure Z1 + 8x2min Z3 (60s rec)', mon: 'REST', tue: '1:00 AeT Dev (2x20min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:30 Long Pure Z1 (70min hiking)', sat: '3:00 Pure Z1 (B2B)', 
-             notes: 'Post-race integration. Resume AeT development.', type: 'normal'},
-            
-            {week: 13, phase: 'phase2', dates: '24th-30th Nov', hours: '10.0', 
-             sun: '1:00 AEROBIC DECOUPLING TEST + 6x90s Z3', mon: 'REST', tue: '1:00 AeT Dev (4x8min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:45 Long Pure Z1 (75min hiking)', sat: '3:15 Pure Z1 (B2B)', 
-             notes: 'TESTING WEEK - Compare to Week 5. Assess AeT progress.', type: 'testing'},
-            
-            {week: 14, phase: 'phase2', dates: '1st-7th Dec', hours: '10.5', 
-             sun: '1:00 Pure Z1 + 10x90s Z3 (45s rec)', mon: 'REST', tue: '1:00 AeT Dev (1x30min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '4:00 Long Pure Z1 (80min hiking)', sat: '3:30 Pure Z1 (B2B)', 
-             notes: 'Longer AeT blocks. Building endurance at threshold.', type: 'normal'},
-            
-            {week: 15, phase: 'phase2', dates: '8th-14th Dec', hours: '11.0', 
-             sun: '1:00 Pure Z1 + 5x4min Z3 (2min rec)', mon: 'REST', tue: '1:00 AeT Dev (3x10min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '4:15 Long Pure Z1 (85min hiking)', sat: '3:45 Pure Z1 (B2B)', 
-             notes: 'Peak AeT development phase. Monitor fatigue closely.', type: 'normal'},
-            
-            {week: 16, phase: 'phase2', dates: '15th-21st Dec', hours: '8.5', 
-             sun: '1:00 Pure Z1 + 4x30s strides', mon: 'REST', tue: '1:00 Pure Z1 + strides', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:00 Long Pure Z1 (60min hiking)', sat: '2:30 Pure Z1', 
-             notes: 'RECOVERY WEEK - Prepare for Christmas period.', type: 'recovery'},
-            
-            // Phase 3: Christmas Maintenance (Weeks 17-20) - Realistic holiday training
-            {week: 17, phase: 'phase3', dates: '22nd-28th Dec', hours: '7.0', 
-             sun: '1:00 Pure Z1', mon: 'REST', tue: '1:00 Pure Z1 + strides', 
-             wed: 'REST (Christmas Day)', thu: '1:00 Pure Z1 (Boxing Day)', fri: 'REST', sat: '3:00 Long Pure Z1 (45min hiking)', 
-             notes: 'Christmas Week - maintain fitness, enjoy festivities.', type: 'christmas'},
-            
-            {week: 18, phase: 'phase3', dates: '29th Dec-4th Jan', hours: '7.5', 
-             sun: '1:00 Pure Z1', mon: 'REST', tue: 'REST (New Year\'s Day)', 
-             wed: '1:00 Pure Z1 + strides', thu: '1:00 Pure Z1', fri: 'REST', sat: '3:30 Long Pure Z1 (50min hiking)', 
-             notes: 'New Year Week - gradual return to training.', type: 'christmas'},
-            
-            {week: 19, phase: 'phase3', dates: '5th-11th Jan', hours: '8.0', 
-             sun: '1:00 Pure Z1 + 4x2min Z3 (90s rec)', mon: 'REST', tue: '1:00 Pure Z1 + strides', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:00 Long Pure Z1 (55min hiking)', sat: '2:30 Pure Z1', 
-             notes: 'Build restart - reintroduce intensity carefully.', type: 'normal'},
-            
-            {week: 20, phase: 'phase3', dates: '12th-18th Jan', hours: '8.5', 
-             sun: '1:00 Pure Z1 + 5x2min Z3 (75s rec)', mon: 'REST', tue: '1:00 AeT Dev (4x6min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:15 Long Pure Z1 (60min hiking)', sat: '2:45 Pure Z1 (B2B)', 
-             notes: 'Resume AeT work. Prepare for serious build phase.', type: 'normal'},
-            
-            // Phase 4: Serious Build Phase (Weeks 21-28) - Conservative progression
-            {week: 21, phase: 'phase4', dates: '19th-25th Jan', hours: '9.0', 
-             sun: '1:00 Pure Z1 + 6x3min Z3 (90s rec)', mon: 'REST', tue: '1:00 AeT Dev (3x8min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:30 Long Pure Z1 (65min hiking)', sat: '3:00 Pure Z1 (B2B)', 
-             notes: 'Serious build begins. Maintain polarized discipline.', type: 'normal'},
-            
-            {week: 22, phase: 'phase4', dates: '26th Jan-1st Feb', hours: '8.5', 
-             sun: '1:00 Pure Z1 recovery', mon: 'REST', tue: '45min Pure Z1 easy', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '45min Easy Z1 (pre-FKT)', sat: 'FKT ATTEMPT: East Devon Route (50K+)', 
-             notes: 'FKT CHALLENGE WEEK - East Devon 50K+ attempt.', type: 'devon-race'},
-            
-            {week: 23, phase: 'phase4', dates: '2nd-8th Feb', hours: '9.5', 
-             sun: '1:00 Pure Z1 + 10x90s Z3 (45s rec)', mon: 'REST', tue: '1:00 AeT Dev (1x25min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:45 Long Pure Z1 (70min hiking)', sat: '3:15 Pure Z1 (B2B)', 
-             notes: 'Post-FKT recovery. Resume build progression.', type: 'normal'},
-            
-            {week: 24, phase: 'phase4', dates: '9th-15th Feb', hours: '10.0', 
-             sun: '1:00 Pure Z1 + 8x3min Z3 (75s rec)', mon: 'REST', tue: '1:00 AeT Dev (2x15min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '4:00 Long Pure Z1 (75min hiking)', sat: '3:30 Pure Z1 (B2B)', 
-             notes: 'Structured build progression. Monitor recovery.', type: 'normal'},
-            
-            {week: 25, phase: 'phase4', dates: '16th-22nd Feb', hours: '10.5', 
-             sun: '1:00 AEROBIC DECOUPLING TEST + 8x90s Z3', mon: 'REST', tue: '1:00 AeT Dev (3x10min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '4:15 Long Pure Z1 (80min hiking)', sat: '3:45 Pure Z1 (B2B)', 
-             notes: 'TESTING WEEK - Mid-build assessment. Check progress.', type: 'testing'},
-            
-            {week: 26, phase: 'phase4', dates: '23rd Feb-1st Mar', hours: '11.0', 
-             sun: '1:00 Pure Z1 + 6x5min Z3 (2min rec)', mon: 'REST', tue: '1:00 AeT Dev (1x35min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '4:30 Long Pure Z1 (85min hiking)', sat: '4:00 Pure Z1 (B2B)', 
-             notes: 'Peak build intensity. Longer Z3 intervals introduced.', type: 'normal'},
-            
-            {week: 27, phase: 'phase4', dates: '2nd-8th Mar', hours: '11.5', 
-             sun: '1:00 Pure Z1 + 10x2min Z3 (45s rec)', mon: 'REST', tue: '1:00 AeT Dev (2x20min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '4:45 Long Pure Z1 (90min hiking)', sat: '4:15 Pure Z1 (B2B)', 
-             notes: 'Peak build volume. Prepare for recovery week.', type: 'normal'},
-            
-            {week: 28, phase: 'phase4', dates: '9th-15th Mar', hours: '9.0', 
-             sun: '1:00 Pure Z1 + 4x90s Z3 (90s rec)', mon: 'REST', tue: '1:00 Pure Z1 + strides', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:30 Long Pure Z1 (60min hiking)', sat: '3:00 Pure Z1', 
-             notes: 'RECOVERY WEEK - Absorb build adaptations.', type: 'recovery'},
-            
-            // Phase 5: Peak Phase (Weeks 29-35) - Race-specific preparation
-            {week: 29, phase: 'phase5', dates: '16th-22nd Mar', hours: '12.0', 
-             sun: '1:00 Pure Z1 + 5x6min Z3 (2min rec)', mon: 'REST', tue: '1:15 AeT Dev (1x45min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '5:00 Long Pure Z1 (100min hiking)', sat: '4:30 Pure Z1 (B2B)', 
-             notes: 'Peak phase begins. Race-specific endurance focus.', type: 'peak'},
-            
-            {week: 30, phase: 'phase5', dates: '23rd-29th Mar', hours: '12.5', 
-             sun: '1:00 Pure Z1 + 8x4min Z3 (90s rec)', mon: 'REST', tue: '1:15 AeT Dev (3x15min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '5:15 Long Pure Z1 (105min hiking)', sat: '4:45 Pure Z1 (B2B)', 
-             notes: 'High volume week. Monitor fatigue carefully.', type: 'peak'},
-            
-            {week: 31, phase: 'phase5', dates: '30th Mar-5th Apr', hours: '10.0', 
-             sun: '1:00 Pure Z1 recovery', mon: 'REST', tue: '45min Pure Z1 easy', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '45min Easy Z1 + race prep', sat: 'RACE: Southwest/Wales Ultra (50M-100K)', 
-             notes: 'B RACE WEEK - Southwest/Wales Ultra dress rehearsal.', type: 'devon-race'},
-            
-            {week: 32, phase: 'phase5', dates: '6th-12th Apr', hours: '13.0', 
-             sun: '1:00 Pure Z1 + 6x8min Z3 (2min rec)', mon: 'REST', tue: '1:15 AeT Dev (1x50min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '5:30 Long Pure Z1 (110min hiking)', sat: '5:00 Pure Z1 (B2B)', 
-             notes: 'Post-B race integration. Peak volume week.', type: 'peak'},
-            
-            {week: 33, phase: 'phase5', dates: '13th-19th Apr', hours: '13.5', 
-             sun: '1:00 Pure Z1 + 10x3min Z3 (60s rec)', mon: 'REST', tue: '1:15 AeT Dev (2x25min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '5:45 Long Pure Z1 (115min hiking)', sat: '5:15 Pure Z1 (B2B)', 
-             notes: 'PEAK VOLUME WEEK - Maximum training load.', type: 'peak'},
-            
-            {week: 34, phase: 'phase5', dates: '20th-26th Apr', hours: '12.0', 
-             sun: '1:00 AEROBIC DECOUPLING TEST + 6x3min Z3', mon: 'REST', tue: '1:00 AeT Dev (1x40min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '5:00 Long Pure Z1 (100min hiking)', sat: '4:30 Pure Z1 (B2B)', 
-             notes: 'TESTING WEEK - Final fitness assessment.', type: 'testing'},
-            
-            {week: 35, phase: 'phase5', dates: '27th Apr-3rd May', hours: '10.5', 
-             sun: '1:00 Pure Z1 + 4x5min Z3 (2min rec)', mon: 'REST', tue: '1:00 Pure Z1 + strides', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '4:00 Long Pure Z1 (80min hiking)', sat: '3:30 Pure Z1', 
-             notes: 'RECOVERY WEEK - Peak phase completion.', type: 'recovery'},
-            
-            // Phase 6: Taper Phase (Weeks 36-41) - Race preparation
-            {week: 36, phase: 'phase6', dates: '4th-10th May', hours: '9.0', 
-             sun: '1:00 Pure Z1 + 6x2min Z3 (90s rec)', mon: 'REST', tue: '1:00 Pure Z1 + 6x30s strides', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:30 Long Pure Z1 (60min hiking)', sat: '3:00 Pure Z1', 
-             notes: 'Taper begins. Maintain intensity, reduce volume.', type: 'taper'},
-            
-            {week: 37, phase: 'phase6', dates: '11th-17th May', hours: '8.0', 
-             sun: '1:00 Pure Z1 + 5x90s Z3 (90s rec)', mon: 'REST', tue: '1:00 Pure Z1 + strides', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:00 Long Pure Z1 (50min hiking)', sat: '2:30 Pure Z1', 
-             notes: 'Continued taper. Focus on race preparation.', type: 'taper'},
-            
-            {week: 38, phase: 'phase6', dates: '18th-24th May', hours: '7.0', 
-             sun: '1:00 Pure Z1 + 4x90s Z3 (2min rec)', mon: 'REST', tue: '45min Pure Z1 + strides', 
-             wed: '45min Pure Z1', thu: 'REST', fri: '2:30 Long Pure Z1 (40min hiking)', sat: '2:00 Pure Z1', 
-             notes: 'Deeper taper. Race logistics preparation.', type: 'taper'},
-            
-            {week: 39, phase: 'phase6', dates: '25th-31st May', hours: '6.0', 
-             sun: '45min Pure Z1 + 4x60s Z3 (90s rec)', mon: 'REST', tue: '45min Pure Z1 + strides', 
-             wed: '45min Pure Z1', thu: 'REST', fri: '2:00 Easy Pure Z1 (30min hiking)', sat: '1:30 Pure Z1', 
-             notes: 'Final preparation. Equipment and nutrition checks.', type: 'taper'},
-            
-            {week: 40, phase: 'phase6', dates: '1st-7th Jun', hours: '4.5', 
-             sun: '45min Pure Z1 + 3x45s Z3 (2min rec)', mon: 'REST', tue: '30min Pure Z1 + 4x20s pickups', 
-             wed: '30min Pure Z1', thu: 'REST', fri: '1:30 Easy Pure Z1 (20min hiking)', sat: '1:00 Pure Z1', 
-             notes: 'Race week minus one. Final sharpening.', type: 'taper'},
-            
-            {week: 41, phase: 'phase6', dates: '8th-13th Jun', hours: '3.0', 
-             sun: '45min Pure Z1 + 4x30s strides', mon: 'REST', tue: '30min Pure Z1 + 3x20s pickups', 
-             wed: '30min Pure Z1', thu: 'REST', fri: '30min Pure Z1 shakeout OR REST', sat: 'RACE DAY - SDW100!', 
-             notes: 'RACE WEEK - South Downs Way 100. Execute race plan!', type: 'race'}
+             notes: 'RECOVERY WEEK - Absorb adaptations from base phase.', type: 'recovery'}
         ];
         
-        let currentPhase = 'all';
+        var currentPhase = 'all';
         
         function showPhase(phase) {
             currentPhase = phase;
             
-            // Update button states
-            document.querySelectorAll('.phase-btn').forEach(btn => {
-                btn.classList.remove('active');
-            });
+            var buttons = document.querySelectorAll('.phase-btn');
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('active');
+            }
             event.target.classList.add('active');
             
             renderTable();
         }
         
         function renderTable() {
-            console.log('renderTable called');
-            const tbody = document.getElementById('trainingBody');
-            if (!tbody) {
-                console.error('trainingBody element not found');
-                return;
-            }
+            var tbody = document.getElementById('trainingBody');
+            if (!tbody) return;
             
-            console.log('Found tbody, clearing and rendering...');
             tbody.innerHTML = '';
             
-            const filteredData = currentPhase === 'all' ? trainingData : 
-                                 trainingData.filter(week => week.phase === currentPhase);
+            var filteredData = currentPhase === 'all' ? trainingData : 
+                                 trainingData.filter(function(week) { return week.phase === currentPhase; });
             
-            console.log('Filtered data length:', filteredData.length);
-            
-            filteredData.forEach((week, index) => {
-                const row = document.createElement('tr');
+            for (var i = 0; i < filteredData.length; i++) {
+                var week = filteredData[i];
+                var row = document.createElement('tr');
                 
-                // Apply special styling based on week type
                 if (week.type === 'recovery') {
                     row.classList.add('recovery-week');
                 } else if (week.type === 'peak') {
@@ -974,103 +781,75 @@
                 }
                 
                 function getCellClasses(workout) {
-                    let classes = ['day-col'];
+                    var classes = ['day-col'];
                     if (!workout) return classes.join(' ');
                     
-                    if (workout === 'REST' || workout.includes('REST (')) {
+                    if (workout === 'REST' || workout.indexOf('REST (') !== -1) {
                         classes.push('rest-day');
-                    } else if (workout.includes('Long')) {
+                    } else if (workout.indexOf('Long') !== -1) {
                         classes.push('long-run');
-                    } else if (workout.includes('B2B')) {
+                    } else if (workout.indexOf('B2B') !== -1) {
                         classes.push('back-to-back');
-                    } else if (workout.includes('AeT Dev')) {
+                    } else if (workout.indexOf('AeT Dev') !== -1) {
                         classes.push('aet-session');
-                    } else if (workout.includes('Z3') && !workout.includes('AeT')) {
+                    } else if (workout.indexOf('Z3') !== -1 && workout.indexOf('AeT') === -1) {
                         classes.push('zone3-session');
-                    } else if (workout.includes('Pure Z1')) {
+                    } else if (workout.indexOf('Pure Z1') !== -1) {
                         classes.push('pure-z1');
-                    } else if (workout.includes('RACE') || workout.includes('FKT')) {
+                    } else if (workout.indexOf('RACE') !== -1 || workout.indexOf('FKT') !== -1) {
                         classes.push('devon-race');
                     }
                     return classes.join(' ');
                 }
                 
-                try {
-                    row.innerHTML = `
-                        <td class="week-col">Week ${week.week}</td>
-                        <td class="date-col">${week.dates}</td>
-                        <td class="hours-col">${week.hours}</td>
-                        <td class="${getCellClasses(week.sun)}">${week.sun || 'N/A'}</td>
-                        <td class="${getCellClasses(week.mon)}">${week.mon || 'N/A'}</td>
-                        <td class="${getCellClasses(week.tue)}">${week.tue || 'N/A'}</td>
-                        <td class="${getCellClasses(week.wed)}">${week.wed || 'N/A'}</td>
-                        <td class="${getCellClasses(week.thu)}">${week.thu || 'N/A'}</td>
-                        <td class="${getCellClasses(week.fri)}">${week.fri || 'N/A'}</td>
-                        <td class="${getCellClasses(week.sat)}">${week.sat || 'N/A'}</td>
-                        <td>${week.notes || ''}</td>
-                    `;
-                    
-                    tbody.appendChild(row);
-                } catch (error) {
-                    console.error('Error creating row for week', week.week, error);
-                }
-            });
-            
-            console.log('Table rendered with', filteredData.length, 'rows');
+                row.innerHTML = 
+                    '<td class="week-col">Week ' + week.week + '</td>' +
+                    '<td class="date-col">' + week.dates + '</td>' +
+                    '<td class="hours-col">' + week.hours + '</td>' +
+                    '<td class="' + getCellClasses(week.sun) + '"><input type="checkbox" class="progress-checkbox">' + (week.sun || 'N/A') + '</td>' +
+                    '<td class="' + getCellClasses(week.mon) + '"><input type="checkbox" class="progress-checkbox">' + (week.mon || 'N/A') + '</td>' +
+                    '<td class="' + getCellClasses(week.tue) + '"><input type="checkbox" class="progress-checkbox">' + (week.tue || 'N/A') + '</td>' +
+                    '<td class="' + getCellClasses(week.wed) + '"><input type="checkbox" class="progress-checkbox">' + (week.wed || 'N/A') + '</td>' +
+                    '<td class="' + getCellClasses(week.thu) + '"><input type="checkbox" class="progress-checkbox">' + (week.thu || 'N/A') + '</td>' +
+                    '<td class="' + getCellClasses(week.fri) + '"><input type="checkbox" class="progress-checkbox">' + (week.fri || 'N/A') + '</td>' +
+                    '<td class="' + getCellClasses(week.sat) + '"><input type="checkbox" class="progress-checkbox">' + (week.sat || 'N/A') + '</td>' +
+                    '<td>' + (week.notes || '') + '</td>';
+                
+                tbody.appendChild(row);
+            }
         }
         
         function exportToCSV() {
-            const headers = ['Week', 'Dates', 'Hours', 'Workout 1', 'Workout 2', 'Workout 3', 'Workout 4', 'Workout 5', 'Workout 6', 'Workout 7', 'Notes/Focus'];
+            var headers = ['Week', 'Dates', 'Hours', 'Workout 1', 'Workout 2', 'Workout 3', 'Workout 4', 'Workout 5', 'Workout 6', 'Workout 7', 'Notes/Focus'];
             
-            let csvContent = headers.join(',') + '\n';
+            var csvContent = headers.join(',') + '\n';
             
-            const filteredData = currentPhase === 'all' ? trainingData : 
-                                 trainingData.filter(week => week.phase === currentPhase);
+            var filteredData = currentPhase === 'all' ? trainingData : 
+                                 trainingData.filter(function(week) { return week.phase === currentPhase; });
             
-            filteredData.forEach(week => {
-                const row = [
-                    `Week ${week.week}`,
-                    `"${week.dates}"`,
+            for (var i = 0; i < filteredData.length; i++) {
+                var week = filteredData[i];
+                var row = [
+                    'Week ' + week.week,
+                    '"' + week.dates + '"',
                     week.hours,
-                    `"${week.sun}"`,
-                    `"${week.mon}"`,
-                    `"${week.tue}"`,
-                    `"${week.wed}"`,
-                    `"${week.thu}"`,
-                    `"${week.fri}"`,
-                    `"${week.sat}"`,
-                    `"${week.notes}"`
+                    '"' + week.sun + '"',
+                    '"' + week.mon + '"',
+                    '"' + week.tue + '"',
+                    '"' + week.wed + '"',
+                    '"' + week.thu + '"',
+                    '"' + week.fri + '"',
+                    '"' + week.sat + '"',
+                    '"' + week.notes + '"'
                 ];
                 csvContent += row.join(',') + '\n';
-            });
+            }
             
-            const blob = new Blob([csvContent], { type: 'text/csv' });
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
+            var blob = new Blob([csvContent], { type: 'text/csv' });
+            var url = window.URL.createObjectURL(blob);
+            var a = document.createElement('a');
             a.href = url;
-            a.download = `SDW100_UA_Training_Plan_${currentPhase}.csv`;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            window.URL.revokeObjectURL(url);
-        }
-        
-        function exportDevonRaces() {
-            const raceData = [
-                ['Race', 'Date', 'Distance', 'Location', 'Purpose'],
-                ['East Devon 8 Trigs Ultra', '8th November 2025', '53K', 'East Devon', 'Navigation & terrain prep'],
-                ['East Devon FKT Challenge', '31st Jan/1st Feb 2026', '50K+', 'East Devon', 'Self-supported ultra'],
-                ['Southwest/Wales Ultra', '4th-5th April 2026', '50M-100K', 'Southwest/Wales', 'Dress rehearsal'],
-                ['South Downs Way 100', '13th June 2026', '100 miles', 'Winchester-Eastbourne', 'GOAL RACE']
-            ];
-            
-            let csvContent = raceData.map(row => row.join(',')).join('\n');
-            
-            const blob = new Blob([csvContent], { type: 'text/csv' });
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'Devon_Race_Schedule_2025-2026.csv';
+            a.download = 'SDW100_Training_Plan_' + currentPhase + '.csv';
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
@@ -1078,9 +857,9 @@
         }
         
         function toggleFKTAppendix() {
-            const appendix = document.getElementById('fktAppendix');
-            const table = document.querySelector('.table-container');
-            const button = event.target;
+            var appendix = document.getElementById('fktAppendix');
+            var table = document.querySelector('.table-container');
+            var button = event.target;
             
             if (appendix && table) {
                 if (appendix.style.display === 'none') {
@@ -1097,71 +876,42 @@
             }
         }
         
-        // Initialize when DOM is loaded
+        function exportDevonRaces() {
+            var raceData = [
+                ['Race', 'Date', 'Distance', 'Location', 'Purpose'],
+                ['East Devon 8 Trigs Ultra', '8th November 2025', '53K', 'East Devon', 'Navigation & terrain prep'],
+                ['East Devon FKT Challenge', '31st Jan/1st Feb 2026', '50K+', 'East Devon', 'Self-supported ultra'],
+                ['Southwest/Wales Ultra', '4th-5th April 2026', '50M-100K', 'Southwest/Wales', 'Dress rehearsal'],
+                ['South Downs Way 100', '13th June 2026', '100 miles', 'Winchester-Eastbourne', 'GOAL RACE']
+            ];
+            
+            var csvContent = raceData.map(function(row) { return row.join(','); }).join('\n');
+            
+            var blob = new Blob([csvContent], { type: 'text/csv' });
+            var url = window.URL.createObjectURL(blob);
+            var a = document.createElement('a');
+            a.href = url;
+            a.download = 'Devon_Race_Schedule_2025-2026.csv';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }
+        
         document.addEventListener('DOMContentLoaded', function() {
-            console.log('DOM loaded, initializing table...');
             renderTable();
         });
         
-        // Multiple fallback initialization methods for mobile compatibility
         window.addEventListener('load', function() {
-            console.log('Window loaded, checking table...');
             if (document.getElementById('trainingBody')) {
                 renderTable();
             }
         });
         
-        // Immediate execution fallback
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', renderTable);
         } else {
-            // DOM already loaded
             setTimeout(renderTable, 100);
-        }
-        
-        // Final fallback with longer delay for slow mobile browsers
-        setTimeout(() => {
-            if (document.getElementById('trainingBody') && document.getElementById('trainingBody').children.length === 0) {
-                console.log('Table empty, forcing render...');
-                renderTable();
-            }
-        }, 1000);
-        
-        // Register inline service worker for PWA functionality
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                const swCode = `
-                    const CACHE_NAME = 'sdw-training-v1';
-                    const urlsToCache = [window.location.href];
-                    
-                    self.addEventListener('install', function(event) {
-                        event.waitUntil(
-                            caches.open(CACHE_NAME).then(function(cache) {
-                                return cache.addAll(urlsToCache);
-                            })
-                        );
-                    });
-                    
-                    self.addEventListener('fetch', function(event) {
-                        event.respondWith(
-                            caches.match(event.request).then(function(response) {
-                                return response || fetch(event.request);
-                            })
-                        );
-                    });
-                `;
-                
-                const blob = new Blob([swCode], {type: 'application/javascript'});
-                const swUrl = URL.createObjectURL(blob);
-                
-                navigator.serviceWorker.register(swUrl)
-                    .then(function(registration) {
-                        console.log('ServiceWorker registered successfully');
-                    })
-                    .catch(function(err) {
-                        console.log('ServiceWorker registration failed: ', err);
-                    });
-            });
         }
     </script>
 </body>
