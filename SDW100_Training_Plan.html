@@ -709,6 +709,7 @@
 
     <script>
         var trainingData = [
+            // Phase 1: Aerobic Base Development (Weeks 1-8)
             {week: 1, phase: 'phase1', dates: '1st-7th Sep', hours: '6.0', 
              sun: '1:00 Pure Z1 (TRAINING STARTS)', mon: 'REST', tue: '1:00 Pure Z1 + 4x30s strides', 
              wed: '1:00 Pure Z1', thu: 'REST', fri: '1:30 Long Pure Z1 (20min hiking)', sat: '1:30 Pure Z1', 
@@ -852,10 +853,7 @@
              wed: '1:00 Pure Z1', thu: 'REST', fri: '3:30 Long Pure Z1 (60min hiking)', sat: '3:00 Pure Z1', 
              notes: 'RECOVERY WEEK - Absorb build adaptations.', type: 'recovery'},
             
-           // Modified weeks for Five Rivers Ultra 2026 (May 16th)
-            // Replace these specific weeks in your existing training plan
-            
-            // Modified Peak Phase - Less hiking, more flat endurance
+            // Phase 5: Peak Phase (Weeks 29-33) - MODIFIED FOR FIVE RIVERS
             {week: 29, phase: 'phase5', dates: '16th-22nd Mar', hours: '12.0', 
              sun: '1:00 Pure Z1 + 5x6min Z3 (2min rec)', mon: 'REST', tue: '1:15 AeT Dev (1x45min @144bpm)', 
              wed: '1:00 Pure Z1', thu: 'REST', fri: '5:00 Long Pure Z1 (30min hiking)', sat: '4:30 Pure Z1 (B2B)', 
@@ -881,7 +879,7 @@
              wed: '1:00 Pure Z1', thu: 'REST', fri: '5:45 Long Pure Z1 (45min hiking)', sat: '5:15 Pure Z1 (B2B)', 
              notes: 'PEAK VOLUME WEEK - Maximum training load before taper.', type: 'peak'},
             
-            // Modified Taper Phase - Starts Week 34 for May 16 race
+            // Phase 6: Taper Phase (Weeks 34-37) - MODIFIED FOR MAY 16 RACE
             {week: 34, phase: 'phase6', dates: '20th-26th Apr', hours: '11.0', 
              sun: '1:00 AEROBIC DECOUPLING TEST + 6x3min Z3', mon: 'REST', tue: '1:00 AeT Dev (1x30min @144bpm)', 
              wed: '1:00 Pure Z1', thu: 'REST', fri: '4:30 Long Pure Z1 (30min hiking)', sat: '4:00 Pure Z1 (B2B)', 
@@ -922,14 +920,7 @@
              sun: '1:00 Pure Z1 + 4x90s Z3 (2min rec)', mon: 'REST', tue: '1:00 Pure Z1 + strides', 
              wed: '1:00 Pure Z1', thu: 'REST', fri: '2:00 Long Pure Z1', sat: '2:00 Pure Z1', 
              notes: 'Structured training resumes. Begin planning next goals.', type: 'normal'}
-            
-            // Also modify the header information and race schedule:
-            // Change the race details in your HTML header section:
-            // <div><strong>Race Date:</strong> 16th May 2026</div>
-            // <div><strong>Duration:</strong> 37 weeks to race</div>
-            
-            // Update race schedule section:
-            /*
+        ];
         
         var currentPhase = 'all';
         
@@ -1106,5 +1097,6 @@
     </script>
 </body>
 </html>
+
 
 
