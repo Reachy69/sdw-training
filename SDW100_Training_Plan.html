@@ -1081,22 +1081,26 @@
             window.URL.revokeObjectURL(url);
         }
         
-        // Initialize table on page load
-        document.addEventListener('DOMContentLoaded', function() {
+        // Initialize table on page load - multiple methods to ensure it works
+        function initializeApp() {
             renderTable();
-        });
+        }
         
-        window.addEventListener('load', function() {
-            if (document.getElementById('trainingBody')) {
+        // Try multiple initialization approaches
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeApp);
+        } else {
+            initializeApp();
+        }
+        
+        window.addEventListener('load', initializeApp);
+        
+        // Fallback initialization after a delay
+        setTimeout(function() {
+            if (document.getElementById('trainingBody') && document.getElementById('trainingBody').innerHTML === '') {
                 renderTable();
             }
-        });
-        
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', renderTable);
-        } else {
-            setTimeout(renderTable, 100);
-        }
+        }, 500);
     </script>
 </body>
 </html>
