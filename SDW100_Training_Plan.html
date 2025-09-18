@@ -320,6 +320,8 @@
     
     <div class="controls">
         <button onclick="window.print()" style="background: #1a4c96; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin: 0 10px; font-size: 14px;">Print</button>
+        <button onclick="toggleFKTAppendix()" style="background: #1a4c96; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin: 0 10px; font-size: 14px;">FKT Guide</button>
+        <button onclick="exportDevonRaces()" style="background: #008b00; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin: 0 10px; font-size: 14px;">Export Devon Races</button>
     </div>
     
     <div class="table-container">
@@ -339,313 +341,212 @@
                     <th>Notes/Focus</th>
                 </tr>
             </thead>
-            <tbody>
-                <!-- Phase 1: Base Building -->
-                <tr>
-                    <td class="week-col">Week 1</td>
-                    <td class="date-col">1st-7th Sep</td>
-                    <td class="hours-col">6.0</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 (TRAINING STARTS)</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 + 4x30s strides</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col long-run"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:30 Easy Z1 (20min hiking)</td>
-                    <td class="day-col long-run"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:30 Easy Z1</td>
-                    <td>Base building begins. Establish aerobic foundation.</td>
-                </tr>
-                <tr>
-                    <td class="week-col">Week 2</td>
-                    <td class="date-col">8th-14th Sep</td>
-                    <td class="hours-col">6.5</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 + 6x30s strides</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST or 30min walk</td>
-                    <td class="day-col long-run"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:45 Easy Z1 (25min hiking)</td>
-                    <td class="day-col long-run"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:45 Easy Z1</td>
-                    <td>Gentle volume increase. Focus on consistency.</td>
-                </tr>
-                <tr>
-                    <td class="week-col">Week 3</td>
-                    <td class="date-col">15th-21st Sep</td>
-                    <td class="hours-col">7.0</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 + 6x30s strides</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col long-run"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">2:00 Easy Z1 (30min hiking)</td>
-                    <td class="day-col long-run"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">2:00 Easy Z1</td>
-                    <td>Building aerobic capacity systematically.</td>
-                </tr>
-                <tr>
-                    <td class="week-col">Week 4</td>
-                    <td class="date-col">22nd-28th Sep</td>
-                    <td class="hours-col">7.5</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 + strength</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 + strides</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col long-run"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">2:15 Easy Z1 (35min hiking)</td>
-                    <td class="day-col long-run"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">2:15 Easy Z1</td>
-                    <td>Add strength training. Maintain aerobic focus.</td>
-                </tr>
-                <tr>
-                    <td class="week-col">Week 5</td>
-                    <td class="date-col">29th Sep-5th Oct</td>
-                    <td class="hours-col">8.0</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 + strength</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 + strides</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col long-run"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">2:30 Easy Z1 (40min hiking)</td>
-                    <td class="day-col long-run"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">2:30 Easy Z1</td>
-                    <td>Steady progression. Monitor recovery.</td>
-                </tr>
-                <tr>
-                    <td class="week-col">Week 6</td>
-                    <td class="date-col">6th-12th Oct</td>
-                    <td class="hours-col">8.5</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 + strength</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 + strides</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col long-run"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">2:45 Easy Z1 (45min hiking)</td>
-                    <td class="day-col long-run"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">2:45 Easy Z1</td>
-                    <td>Volume building steadily. Prepare for threshold.</td>
-                </tr>
-                <tr>
-                    <td class="week-col">Week 7</td>
-                    <td class="date-col">13th-19th Oct</td>
-                    <td class="hours-col">9.0</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 + strength</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 + strides</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col long-run"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">3:00 Easy Z1 (50min hiking)</td>
-                    <td class="day-col long-run"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">3:00 Easy Z1</td>
-                    <td>Peak base phase volume. Solid foundation built.</td>
-                </tr>
-                <tr class="recovery-week">
-                    <td class="week-col">Week 8</td>
-                    <td class="date-col">20th-26th Oct</td>
-                    <td class="hours-col">7.0</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 + 4x30s strides</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 + strides</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col long-run"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">2:00 Easy Z1 (35min hiking)</td>
-                    <td class="day-col long-run"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">2:00 Easy Z1</td>
-                    <td>RECOVERY WEEK - Absorb base training adaptations.</td>
-                </tr>
-                
-                <!-- Phase 2: Threshold Development -->
-                <tr>
-                    <td class="week-col">Week 9</td>
-                    <td class="date-col">27th Oct-2nd Nov</td>
-                    <td class="hours-col">8.5</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 + strength</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col threshold-session"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Threshold (6x6min @144bpm, 90s rec)</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col long-run"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">3:00 Easy Z1 (55min hiking)</td>
-                    <td class="day-col back-to-back"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">2:30 Easy Z1 (B2B)</td>
-                    <td>Introduce threshold work. Tom Evans method begins.</td>
-                </tr>
-                <tr>
-                    <td class="week-col">Week 10</td>
-                    <td class="date-col">3rd-9th Nov</td>
-                    <td class="hours-col">9.0</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 + strength</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col threshold-session"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Threshold (4x10min @144bpm, 2min rec)</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col long-run"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">3:15 Easy Z1 (60min hiking)</td>
-                    <td class="day-col back-to-back"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">2:45 Easy Z1 (B2B)</td>
-                    <td>Build threshold capacity. Monitor HR drift.</td>
-                </tr>
-                <tr class="devon-race">
-                    <td class="week-col">Week 11</td>
-                    <td class="date-col">10th-16th Nov</td>
-                    <td class="hours-col">8.0</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 recovery</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">45min Easy Z1 easy</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">45min Easy Z1 (pre-race)</td>
-                    <td class="day-col devon-race"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">RACE: East Devon 8 Trigs Ultra (53K)</td>
-                    <td>C RACE WEEK - East Devon 8 Trigs Ultra. Navigation practice.</td>
-                </tr>
-                
-                <!-- Continue with more weeks - showing key ME sessions -->
-                <tr>
-                    <td class="week-col">Week 25</td>
-                    <td class="date-col">16th-22nd Feb</td>
-                    <td class="hours-col">11.0</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 + strength</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col me-session"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:30 ME SESSION (12kg vest, treadmill 25% grade, 1000m vert)</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 RECOVERY</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col long-run"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">4:15 Easy Z1 (80min hiking)</td>
-                    <td class="day-col back-to-back"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">3:45 Easy Z1 (B2B)</td>
-                    <td>EVOKE ME TRAINING BEGINS - Revolutionary fatigue resistance method.</td>
-                </tr>
-                
-                <!-- FKT Week -->
-                <tr class="devon-race">
-                    <td class="week-col">Week 22</td>
-                    <td class="date-col">26th Jan-1st Feb</td>
-                    <td class="hours-col">8.5</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 recovery</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">45min Easy Z1 easy</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">45min Easy Z1 (pre-FKT)</td>
-                    <td class="day-col devon-race"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">FKT ATTEMPT: East Devon Route (50K+)</td>
-                    <td>FKT CHALLENGE WEEK - East Devon 50K+ attempt.</td>
-                </tr>
-                
-                <!-- B Race Week -->
-                <tr class="devon-race">
-                    <td class="week-col">Week 27</td>
-                    <td class="date-col">2nd-8th Mar</td>
-                    <td class="hours-col">9.0</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 recovery</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">45min Easy Z1 easy</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">45min Easy Z1 + race prep</td>
-                    <td class="day-col devon-race"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">RACE: Southwest/Wales Ultra (50M-100K)</td>
-                    <td>B RACE WEEK - Southwest/Wales Ultra dress rehearsal.</td>
-                </tr>
-                
-                <!-- Peak ME Training -->
-                <tr class="peak-week">
-                    <td class="week-col">Week 31</td>
-                    <td class="date-col">30th Mar-5th Apr</td>
-                    <td class="hours-col">12.5</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 + strength</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col me-session"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:45 ME SESSION (peak ME work: 15kg vest, 1200m vert)</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 RECOVERY</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col long-run"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">5:00 Easy Z1 (90min hiking)</td>
-                    <td class="day-col back-to-back"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">4:30 Easy Z1 (B2B)</td>
-                    <td>Peak ME training. Tom Evans UTMB-winning method.</td>
-                </tr>
-                
-                <!-- Peak Volume Week -->
-                <tr class="peak-week">
-                    <td class="week-col">Week 33</td>
-                    <td class="date-col">13th-19th Apr</td>
-                    <td class="hours-col">13.5</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 + strength</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col me-session"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:30 ME SESSION (race-specific: flat terrain focus)</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 RECOVERY</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col long-run"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">5:30 Easy Z1 (race pace practice)</td>
-                    <td class="day-col back-to-back"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">5:00 Easy Z1 (B2B race sim)</td>
-                    <td>PEAK VOLUME WEEK. Race-specific adaptations.</td>
-                </tr>
-                
-                <!-- Taper Week -->
-                <tr class="peak-week">
-                    <td class="week-col">Week 36</td>
-                    <td class="date-col">4th-10th May</td>
-                    <td class="hours-col">8.0</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">1:00 Easy Z1 + 4x30s strides</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">45min Easy Z1 + 4x20s pickups</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">45min Easy Z1</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col long-run"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">2:30 Easy Z1 (easy pace)</td>
-                    <td class="day-col long-run"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">2:00 Easy Z1</td>
-                    <td>TAPER WEEK. Maintain sharpness, reduce volume.</td>
-                </tr>
-                
-                <!-- Race Week -->
-                <tr class="race-week">
-                    <td class="week-col">Week 37</td>
-                    <td class="date-col">11th-17th May</td>
-                    <td class="hours-col">3.5</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">45min Easy Z1 + 4x30s strides</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">30min Easy Z1 + 3x20s pickups</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">30min Easy Z1</td>
-                    <td class="day-col rest-day"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">REST</td>
-                    <td class="day-col pure-z1"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">30min Easy Z1 shakeout OR REST</td>
-                    <td class="day-col race-week"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">RACE DAY - Five Rivers Ultra 100!</td>
-                    <td>RACE WEEK - Five Rivers Ultra 100. Execute with confidence!</td>
-                </tr>
+            <tbody id="trainingBody">
+                <!-- JavaScript will populate this -->
             </tbody>
         </table>
     </div>
     
-    <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-top: 20px;">
-        <h3 style="color: #d32f2f; margin-bottom: 15px;">Evoke Method Key Sessions</h3>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
-            <div style="background: white; padding: 15px; border-radius: 8px; border-left: 4px solid #d32f2f;">
-                <h4 style="color: #d32f2f; margin-top: 0;">ME Sessions (Weeks 25-32)</h4>
-                <p><strong>Equipment:</strong> 12-15kg weighted vest or backpack</p>
-                <p><strong>Protocol:</strong> Treadmill 25% grade for 1000-1200m vertical gain</p>
-                <p><strong>Frequency:</strong> 1x per week, between recovery days</p>
-                <p><strong>Benefits:</strong> Fatigue resistance without lactate accumulation</p>
-            </div>
-            <div style="background: white; padding: 15px; border-radius: 8px; border-left: 4px solid #4caf50;">
-                <h4 style="color: #4caf50; margin-top: 0;">Threshold Work (Weeks 9-24)</h4>
-                <p><strong>Target:</strong> 144 bpm (your aerobic threshold)</p>
-                <p><strong>Format:</strong> Intervals from 6x6min up to 1x30min</p>
-                <p><strong>Purpose:</strong> Build speed reserve for ultra pace</p>
-                <p><strong>Recovery:</strong> 90s-3min between intervals</p>
-            </div>
-            <div style="background: white; padding: 15px; border-radius: 8px; border-left: 4px solid #2e7d32;">
-                <h4 style="color: #2e7d32; margin-top: 0;">Easy Z1 Base (All Weeks)</h4>
-                <p><strong>Heart Rate:</strong> <144 bpm (nose breathing)</p>
-                <p><strong>Percentage:</strong> 80% of all training time</p>
-                <p><strong>Purpose:</strong> Aerobic enzyme development</p>
-                <p><strong>Key:</strong> Conversational pace, build volume gradually</p>
-            </div>
+    <div style="display: none;" id="fktAppendix">
+        <div style="background: linear-gradient(135deg, #1a4c96, #2d5aa0); color: white; padding: 15px; margin: 20px 0 10px 0; border-radius: 8px; font-weight: bold; text-align: center;">
+            FKT CHALLENGE APPENDIX
         </div>
         
-        <div style="background: linear-gradient(135deg, #e3f2fd, #bbdefb); padding: 15px; border-radius: 8px; margin-top: 20px;">
-            <h4 style="color: #0277bd; margin-top: 0;">Tom Evans Quote</h4>
-            <p style="font-style: italic; margin-bottom: 10px;">"Heavy uphill long reps – wearing a heavy weighted vest for an uphill tempo, then hide the pack, run down and hike back up at tempo without the pack. Those sessions made a huge difference."</p>
-            <p style="font-size: 13px; color: #0277bd;"><strong>- Tom Evans on his UTMB-winning ME training</strong></p>
+        <div class="table-container">
+            <h3 style="color: #1a4c96; margin-bottom: 20px;">East Devon FKT Challenge Options</h3>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; margin-bottom: 30px;">
+                
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 5px solid #008b00;">
+                    <h4 style="color: #008b00; margin-top: 0;">FKT Option 1: East Devon Way Point-to-Point</h4>
+                    <p><strong>Route:</strong> Exmouth to Lyme Regis via East Devon Way</p>
+                    <p><strong>Distance:</strong> ~40 miles (64km)</p>
+                    <p><strong>Challenge Level:</strong> ⭐⭐⭐⭐ (High - long distance, varied terrain)</p>
+                </div>
+                
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 5px solid #ff6b35;">
+                    <h4 style="color: #ff6b35; margin-top: 0;">FKT Option 2: Jurassic Coast Section</h4>
+                    <p><strong>Route:</strong> Exmouth to West Bay (Bridport)</p>
+                    <p><strong>Distance:</strong> ~35 miles via South West Coast Path</p>
+                    <p><strong>Challenge Level:</strong> ⭐⭐⭐⭐⭐ (Very High - coastal cliffs)</p>
+                </div>
+                
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 5px solid #1a4c96;">
+                    <h4 style="color: #1a4c96; margin-top: 0;">FKT Option 3: East Devon Circular</h4>
+                    <p><strong>Route:</strong> Sidmouth-based circular route</p>
+                    <p><strong>Distance:</strong> Design your own 50K loop</p>
+                    <p><strong>Challenge Level:</strong> ⭐⭐⭐ (Moderate - customizable)</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <script>
-        // Simple persistent checkbox storage
+        // Training data array
+        var trainingData = [
+            // Phase 1: Base Building (Weeks 1-8)
+            {week: 1, dates: '1st-7th Sep', hours: '6.0', sun: '1:00 Easy Z1 (TRAINING STARTS)', mon: 'REST', tue: '1:00 Easy Z1 + 4x30s strides', wed: '1:00 Easy Z1', thu: 'REST', fri: '1:30 Easy Z1 (20min hiking)', sat: '1:30 Easy Z1', notes: 'Base building begins. Establish aerobic foundation.', type: 'normal'},
+            {week: 2, dates: '8th-14th Sep', hours: '6.5', sun: '1:00 Easy Z1', mon: 'REST', tue: '1:00 Easy Z1 + 6x30s strides', wed: '1:00 Easy Z1', thu: 'REST or 30min walk', fri: '1:45 Easy Z1 (25min hiking)', sat: '1:45 Easy Z1', notes: 'Gentle volume increase. Focus on consistency.', type: 'normal'},
+            {week: 3, dates: '15th-21st Sep', hours: '7.0', sun: '1:00 Easy Z1', mon: 'REST', tue: '1:00 Easy Z1 + 6x30s strides', wed: '1:00 Easy Z1', thu: 'REST', fri: '2:00 Easy Z1 (30min hiking)', sat: '2:00 Easy Z1', notes: 'Building aerobic capacity systematically.', type: 'normal'},
+            {week: 4, dates: '22nd-28th Sep', hours: '7.5', sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Easy Z1 + strides', wed: '1:00 Easy Z1', thu: 'REST', fri: '2:15 Easy Z1 (35min hiking)', sat: '2:15 Easy Z1', notes: 'Add strength training. Maintain aerobic focus.', type: 'normal'},
+            {week: 5, dates: '29th Sep-5th Oct', hours: '8.0', sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Easy Z1 + strides', wed: '1:00 Easy Z1', thu: 'REST', fri: '2:30 Easy Z1 (40min hiking)', sat: '2:30 Easy Z1', notes: 'Steady progression. Monitor recovery.', type: 'normal'},
+            {week: 6, dates: '6th-12th Oct', hours: '8.5', sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Easy Z1 + strides', wed: '1:00 Easy Z1', thu: 'REST', fri: '2:45 Easy Z1 (45min hiking)', sat: '2:45 Easy Z1', notes: 'Volume building steadily. Prepare for threshold.', type: 'normal'},
+            {week: 7, dates: '13th-19th Oct', hours: '9.0', sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Easy Z1 + strides', wed: '1:00 Easy Z1', thu: 'REST', fri: '3:00 Easy Z1 (50min hiking)', sat: '3:00 Easy Z1', notes: 'Peak base phase volume. Solid foundation built.', type: 'normal'},
+            {week: 8, dates: '20th-26th Oct', hours: '7.0', sun: '1:00 Easy Z1 + 4x30s strides', mon: 'REST', tue: '1:00 Easy Z1 + strides', wed: '1:00 Easy Z1', thu: 'REST', fri: '2:00 Easy Z1 (35min hiking)', sat: '2:00 Easy Z1', notes: 'RECOVERY WEEK - Absorb base training adaptations.', type: 'recovery'},
+            
+            // Phase 2: Threshold Development (Weeks 9-16)
+            {week: 9, dates: '27th Oct-2nd Nov', hours: '8.5', sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Threshold (6x6min @144bpm, 90s rec)', wed: '1:00 Easy Z1', thu: 'REST', fri: '3:00 Easy Z1 (55min hiking)', sat: '2:30 Easy Z1 (B2B)', notes: 'Introduce threshold work. Tom Evans method begins.', type: 'normal'},
+            {week: 10, dates: '3rd-9th Nov', hours: '9.0', sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Threshold (4x10min @144bpm, 2min rec)', wed: '1:00 Easy Z1', thu: 'REST', fri: '3:15 Easy Z1 (60min hiking)', sat: '2:45 Easy Z1 (B2B)', notes: 'Build threshold capacity. Monitor HR drift.', type: 'normal'},
+            {week: 11, dates: '10th-16th Nov', hours: '8.0', sun: '1:00 Easy Z1 recovery', mon: 'REST', tue: '45min Easy Z1 easy', wed: '1:00 Easy Z1', thu: 'REST', fri: '45min Easy Z1 (pre-race)', sat: 'RACE: East Devon 8 Trigs Ultra (53K)', notes: 'C RACE WEEK - East Devon 8 Trigs Ultra.', type: 'devon-race'},
+            {week: 12, dates: '17th-23rd Nov', hours: '9.5', sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Threshold (2x20min @144bpm, 3min rec)', wed: '1:00 Easy Z1', thu: 'REST', fri: '3:30 Easy Z1 (70min hiking)', sat: '3:00 Easy Z1 (B2B)', notes: 'Post-race recovery. Resume threshold development.', type: 'normal'},
+            {week: 13, dates: '24th-30th Nov', hours: '10.0', sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Threshold (4x8min @144bpm, 90s rec)', wed: '1:00 Easy Z1', thu: 'REST', fri: '3:45 Easy Z1 (75min hiking)', sat: '3:15 Easy Z1 (B2B)', notes: 'Threshold development continues. Build speed reserve.', type: 'normal'},
+            {week: 14, dates: '1st-7th Dec', hours: '10.5', sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Threshold (1x30min @144bpm)', wed: '1:00 Easy Z1', thu: 'REST', fri: '4:00 Easy Z1 (80min hiking)', sat: '3:30 Easy Z1 (B2B)', notes: 'Longer threshold blocks. Endurance at speed.', type: 'normal'},
+            {week: 15, dates: '8th-14th Dec', hours: '11.0', sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Threshold (3x10min @144bpm, 2min rec)', wed: '1:00 Easy Z1', thu: 'REST', fri: '4:15 Easy Z1 (85min hiking)', sat: '3:45 Easy Z1 (B2B)', notes: 'Peak threshold development phase. Maintain focus.', type: 'normal'},
+            {week: 16, dates: '15th-21st Dec', hours: '8.5', sun: '1:00 Easy Z1 + 4x30s strides', mon: 'REST', tue: '1:00 Easy Z1 + strides', wed: '1:00 Easy Z1', thu: 'REST', fri: '3:00 Easy Z1 (60min hiking)', sat: '2:30 Easy Z1', notes: 'RECOVERY WEEK - Prepare for Christmas period.', type: 'recovery'},
+            
+            // Phase 3: Speed Reserve Development (Weeks 17-24)
+            {week: 17, dates: '22nd-28th Dec', hours: '7.0', sun: '1:00 Easy Z1', mon: 'REST', tue: '1:00 Easy Z1 + strides', wed: 'REST (Christmas Day)', thu: '1:00 Easy Z1 (Boxing Day)', fri: 'REST', sat: '3:00 Easy Z1 (45min hiking)', notes: 'Christmas Week - maintain fitness, enjoy festivities.', type: 'christmas'},
+            {week: 18, dates: '29th Dec-4th Jan', hours: '7.5', sun: '1:00 Easy Z1', mon: 'REST', tue: 'REST (New Years Day)', wed: '1:00 Easy Z1 + strides', thu: '1:00 Easy Z1', fri: 'REST', sat: '3:30 Easy Z1 (50min hiking)', notes: 'New Year Week - gradual return to training.', type: 'christmas'},
+            {week: 19, dates: '5th-11th Jan', hours: '8.5', sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Tempo (5x1km, 2min rec)', wed: '1:00 Easy Z1', thu: 'REST', fri: '3:00 Easy Z1 (55min hiking)', sat: '2:30 Easy Z1', notes: 'Speed work introduction. Build speed reserve.', type: 'normal'},
+            {week: 20, dates: '12th-18th Jan', hours: '9.0', sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Track (8x800m, 90s rec)', wed: '1:00 Easy Z1', thu: 'REST', fri: '3:15 Easy Z1 (60min hiking)', sat: '2:45 Easy Z1 (B2B)', notes: 'Track work for speed development. Tom Evans approach.', type: 'normal'},
+            {week: 21, dates: '19th-25th Jan', hours: '9.5', sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Tempo (6x1km, 90s rec)', wed: '1:00 Easy Z1', thu: 'REST', fri: '3:30 Easy Z1 (65min hiking)', sat: '3:00 Easy Z1 (B2B)', notes: 'Speed reserve building continues systematically.', type: 'normal'},
+            {week: 22, dates: '26th Jan-1st Feb', hours: '8.5', sun: '1:00 Easy Z1 recovery', mon: 'REST', tue: '45min Easy Z1 easy', wed: '1:00 Easy Z1', thu: 'REST', fri: '45min Easy Z1 (pre-FKT)', sat: 'FKT ATTEMPT: East Devon Route (50K+)', notes: 'FKT CHALLENGE WEEK - East Devon 50K+ attempt.', type: 'devon-race'},
+            {week: 23, dates: '2nd-8th Feb', hours: '10.0', sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Track (10x400m, 60s rec)', wed: '1:00 Easy Z1', thu: 'REST', fri: '3:45 Easy Z1 (70min hiking)', sat: '3:15 Easy Z1 (B2B)', notes: 'Post-FKT recovery. Resume speed development.', type: 'normal'},
+            {week: 24, dates: '9th-15th Feb', hours: '10.5', sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Threshold (2x15min @144bpm, 3min rec)', wed: '1:00 Easy Z1', thu: 'REST', fri: '4:00 Easy Z1 (75min hiking)', sat: '3:30 Easy Z1 (B2B)', notes: 'Speed reserve phase complete. Prepare for ME work.', type: 'normal'},
+            
+            // Phase 4: Muscular Endurance Development (Weeks 25-32)
+            {week: 25, dates: '16th-22nd Feb', hours: '11.0', sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:30 ME SESSION (12kg vest, treadmill 25% grade, 1000m vert)', wed: '1:00 Easy Z1 RECOVERY', thu: 'REST', fri: '4:15 Easy Z1 (80min hiking)', sat: '3:45 Easy Z1 (B2B)', notes: 'EVOKE ME TRAINING BEGINS - Revolutionary fatigue resistance method.', type: 'normal'},
+            {week: 26, dates: '23rd Feb-1st Mar', hours: '11.5', sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:30 ME SESSION (weighted uphill + threshold descent)', wed: '1:00 Easy Z1 RECOVERY', thu: 'REST', fri: '4:30 Easy Z1 (85min hiking)', sat: '4:00 Easy Z1 (B2B)', notes: 'ME development continues. Build muscular durability.', type: 'normal'},
+            {week: 27, dates: '2nd-8th Mar', hours: '9.0', sun: '1:00 Easy Z1 recovery', mon: 'REST', tue: '45min Easy Z1 easy', wed: '1:00 Easy Z1', thu: 'REST', fri: '45min Easy Z1 + race prep', sat: 'RACE: Southwest/Wales Ultra (50M-100K)', notes: 'B RACE WEEK - Southwest/Wales Ultra dress rehearsal.', type: 'devon-race'},
+            {week: 28, dates: '9th-15th Mar', hours: '7.5', sun: '1:00 Easy Z1', mon: 'REST', tue: '45min Easy Z1 easy recovery', wed: '1:00 Easy Z1', thu: 'REST', fri: '2:30 Easy Z1 (45min hiking)', sat: '2:00 Easy Z1', notes: 'Post-B race recovery. Resume training gradually.', type: 'recovery'},
+            {week: 29, dates: '16th-22nd Mar', hours: '11.5', sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:30 ME SESSION (Tom Evans method: weighted uphill tempo)', wed: '1:00 Easy Z1 RECOVERY', thu: 'REST', fri: '4:30 Easy Z1 (60min hiking)', sat: '4:00 Easy Z1 (B2B)', notes: 'ME development resumes post-B race. Peak training ahead.', type: 'normal'},
+            {week: 30, dates: '23rd-29th Mar', hours: '12.0', sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:30 ME SESSION (double ME: AM weighted, PM threshold)', wed: '1:00 Easy Z1 RECOVERY', thu: 'REST', fri: '4:45 Easy Z1 (75min hiking)', sat: '4:15 Easy Z1 (B2B)', notes: 'Double ME sessions introduced. Peak ME development.', type: 'normal'},
+            {week: 31, dates: '30th Mar-5th Apr', hours: '12.5', sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:45 ME SESSION (peak ME work: 15kg vest, 1200m vert)', wed: '1:00 Easy Z1 RECOVERY', thu: 'REST', fri: '5:00 Easy Z1 (90min hiking)', sat: '4:30 Easy Z1 (B2B)', notes: 'Peak ME training. Tom Evans UTMB-winning method.', type: 'peak'},
+            {week: 32, dates: '6th-12th Apr', hours: '13.0', sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:45 ME SESSION (weekly for 7 weeks method)', wed: '1:00 Easy Z1 RECOVERY', thu: 'REST', fri: '5:15 Easy Z1 (45min hiking)', sat: '4:45 Easy Z1 (B2B)', notes: 'Peak ME phase continues. Muscular endurance maximized.', type: 'normal'},
+            
+            // Phase 5: Race Specific (Weeks 33-35)
+            {week: 33, dates: '13th-19th Apr', hours: '13.5', sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:30 ME SESSION (race-specific: flat terrain focus)', wed: '1:00 Easy Z1 RECOVERY', thu: 'REST', fri: '5:30 Easy Z1 (race pace practice)', sat: '5:00 Easy Z1 (B2B race sim)', notes: 'PEAK VOLUME WEEK. Race-specific adaptations.', type: 'peak'},
+            {week: 34, dates: '20th-26th Apr', hours: '12.5', sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:30 ME SESSION (final ME peak)', wed: '1:00 Easy Z1 RECOVERY', thu: 'REST', fri: '5:00 Easy Z1 (race nutrition practice)', sat: '4:30 Easy Z1 (B2B)', notes: 'Race simulation focus. Fine-tune pacing and nutrition.', type: 'peak'},
+            {week: 35, dates: '27th Apr-3rd May', hours: '11.0', sun: '1:00 Easy Z1', mon: 'REST', tue: '1:00 Threshold (3x10min @race pace)', wed: '1:00 Easy Z1', thu: 'REST', fri: '4:00 Easy Z1 (race pace final hour)', sat: '3:30 Easy Z1 (B2B)', notes: 'Final race-specific work. Taper preparation begins.', type: 'normal'},
+            
+            // Phase 6: Taper (Weeks 36-37)
+            {week: 36, dates: '4th-10th May', hours: '8.0', sun: '1:00 Easy Z1 + 4x30s strides', mon: 'REST', tue: '45min Easy Z1 + 4x20s pickups', wed: '45min Easy Z1', thu: 'REST', fri: '2:30 Easy Z1 (easy pace)', sat: '2:00 Easy Z1', notes: 'TAPER WEEK. Maintain sharpness, reduce volume.', type: 'taper'},
+            {week: 37, dates: '11th-17th May', hours: '3.5', sun: '45min Easy Z1 + 4x30s strides', mon: 'REST', tue: '30min Easy Z1 + 3x20s pickups', wed: '30min Easy Z1', thu: 'REST', fri: '30min Easy Z1 shakeout OR REST', sat: 'RACE DAY - Five Rivers Ultra 100!', notes: 'RACE WEEK - Five Rivers Ultra 100. Execute with confidence!', type: 'race'}
+        ];
+        
+        // Render table function
+        function renderTable() {
+            var tbody = document.getElementById('trainingBody');
+            if (!tbody) return;
+            
+            tbody.innerHTML = '';
+            
+            for (var i = 0; i < trainingData.length; i++) {
+                var week = trainingData[i];
+                var row = document.createElement('tr');
+                
+                if (week.type === 'devon-race') {
+                    row.classList.add('devon-race');
+                } else if (week.type === 'peak') {
+                    row.classList.add('peak-week');
+                } else if (week.type === 'race') {
+                    row.classList.add('race-week');
+                }
+                
+                function getCellClass(workout) {
+                    if (!workout || workout === 'REST') return 'day-col rest-day';
+                    if (workout.indexOf('ME SESSION') !== -1) return 'day-col me-session';
+                    if (workout.indexOf('Threshold') !== -1 || workout.indexOf('Track') !== -1 || workout.indexOf('Tempo') !== -1) return 'day-col threshold-session';
+                    if (workout.indexOf('Long') !== -1 || workout.indexOf('B2B') !== -1) return 'day-col long-run';
+                    if (workout.indexOf('Easy Z1') !== -1) return 'day-col pure-z1';
+                    if (workout.indexOf('RACE') !== -1 || workout.indexOf('FKT') !== -1) return 'day-col devon-race';
+                    return 'day-col';
+                }
+                
+                row.innerHTML = 
+                    '<td class="week-col">Week ' + week.week + '</td>' +
+                    '<td class="date-col">' + week.dates + '</td>' +
+                    '<td class="hours-col">' + week.hours + '</td>' +
+                    '<td class="' + getCellClass(week.sun) + '"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">' + (week.sun || '') + '</td>' +
+                    '<td class="' + getCellClass(week.mon) + '"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">' + (week.mon || '') + '</td>' +
+                    '<td class="' + getCellClass(week.tue) + '"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">' + (week.tue || '') + '</td>' +
+                    '<td class="' + getCellClass(week.wed) + '"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">' + (week.wed || '') + '</td>' +
+                    '<td class="' + getCellClass(week.thu) + '"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">' + (week.thu || '') + '</td>' +
+                    '<td class="' + getCellClass(week.fri) + '"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">' + (week.fri || '') + '</td>' +
+                    '<td class="' + getCellClass(week.sat) + '"><input type="checkbox" class="progress-checkbox" onchange="saveCheck(this)">' + (week.sat || '') + '</td>' +
+                    '<td>' + (week.notes || '') + '</td>';
+                
+                tbody.appendChild(row);
+            }
+            
+            // Load saved checkbox states
+            loadCheckboxStates();
+        }
+        
+        // Checkbox persistence functions
         function saveCheck(checkbox) {
             var id = checkbox.parentNode.cellIndex + '_' + checkbox.parentNode.parentNode.rowIndex;
             localStorage.setItem('checkbox_' + id, checkbox.checked);
         }
         
-        // Load all checkboxes on page load
-        window.addEventListener('load', function() {
+        function loadCheckboxStates() {
             var checkboxes = document.querySelectorAll('.progress-checkbox');
-            checkboxes.forEach(function(checkbox, index) {
+            checkboxes.forEach(function(checkbox) {
                 var id = checkbox.parentNode.cellIndex + '_' + checkbox.parentNode.parentNode.rowIndex;
                 var saved = localStorage.getItem('checkbox_' + id);
                 if (saved === 'true') {
                     checkbox.checked = true;
                 }
             });
-        });
+        }
+        
+        // FKT toggle function
+        function toggleFKTAppendix() {
+            var appendix = document.getElementById('fktAppendix');
+            var table = document.querySelector('.table-container');
+            var button = event.target;
+            
+            if (appendix && table) {
+                if (appendix.style.display === 'none' || appendix.style.display === '') {
+                    appendix.style.display = 'block';
+                    table.style.display = 'none';
+                    button.textContent = 'Training Plan';
+                    button.style.background = '#008b00';
+                } else {
+                    appendix.style.display = 'none';
+                    table.style.display = 'block';
+                    button.textContent = 'FKT Guide';
+                    button.style.background = '#1a4c96';
+                }
+            }
+        }
+        
+        // Export function
+        function exportDevonRaces() {
+            var raceData = [
+                ['Race', 'Date', 'Distance', 'Location', 'Purpose'],
+                ['East Devon 8 Trigs Ultra', '8th November 2025', '53K', 'East Devon', 'Navigation & terrain prep'],
+                ['East Devon FKT Challenge', '31st Jan/1st Feb 2026', '50K+', 'East Devon', 'Self-supported ultra'],
+                ['Southwest/Wales Ultra', '2nd-8th March 2026', '50M-100K', 'Southwest/Wales', 'Dress rehearsal'],
+                ['Five Rivers Ultra 100', '10th May 2026', '100 miles', 'Essex/Suffolk Coast', 'GOAL RACE']
+            ];
+            
+            var csvContent = raceData.map(function(row) { return row.join(','); }).join('\n');
+            
+            var blob = new Blob([csvContent], { type: 'text/csv' });
+            var url = window.URL.createObjectURL(blob);
+            var a = document.createElement('a');
+            a.href = url;
+            a.download = 'Devon_Race_Schedule_2025-2026.csv';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }
+        
+        // Initialize on page load
+        window.addEventListener('load', renderTable);
+        document.addEventListener('DOMContentLoaded', renderTable);
     </script>
 </body>
 </html>
