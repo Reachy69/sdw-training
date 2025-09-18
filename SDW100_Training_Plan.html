@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5RU 100 Training Plan</title>
+    <title>5RU 100 Training Plan - Evoke Method</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -25,8 +25,8 @@
             font-size: 24px;
         }
         
-        .ua-badge {
-            background: #ff6b35;
+        .evoke-badge {
+            background: #d32f2f;
             color: white;
             padding: 5px 15px;
             border-radius: 20px;
@@ -107,7 +107,7 @@
         
         .zones-title {
             font-weight: bold;
-            color: #1a4c96;
+            color: #d32f2f;
             margin-bottom: 10px;
         }
         
@@ -250,14 +250,15 @@
             border-left: 4px solid #01579b;
         }
         
-        .aet-session {
-            background-color: #f1f8e9;
-            border-left: 3px solid #4caf50;
+        .me-session {
+            background-color: #ffebee;
+            border-left: 3px solid #d32f2f;
+            font-weight: bold;
         }
         
-        .zone3-session {
-            background-color: #ffebee;
-            border-left: 3px solid #f44336;
+        .threshold-session {
+            background-color: #f1f8e9;
+            border-left: 3px solid #4caf50;
         }
         
         .pure-z1 {
@@ -353,15 +354,15 @@
 </head>
 <body>
     <div class="header">
-        <div class="ua-badge">UPHILL ATHLETE OPTIMIZED</div>
+        <div class="evoke-badge">EVOKE ENDURANCE METHOD</div>
         <div class="devon-badge">SW RACES</div>
         <h1>Five Rivers Ultra 100 Mile Training Plan</h1>
         <div class="header-info">
             <div><strong>Start Date:</strong> 1st September 2025</div>
-            <div><strong>Race Date:</strong> 16th May 2026</div>
+            <div><strong>Race Date:</strong> 10th May 2026</div>
             <div><strong>Duration:</strong> 37 weeks to race</div>
-            <div><strong>Training Model:</strong> Polarized 80/20</div>
-            <div><strong>Peak Volume:</strong> 13.5 hours/week</div>
+            <div><strong>Training Model:</strong> Scott Johnston ME Method</div>
+            <div><strong>Peak Volume:</strong> 15 hours/week</div>
         </div>
     </div>
     
@@ -391,7 +392,7 @@
             </div>
             <div class="race-item">
                 <h4>A RACE: Five Rivers Ultra 100</h4>
-                <p><strong>Week 37:</strong> 16th May 2026</p>
+                <p><strong>Week 37:</strong> 10th May 2026</p>
                 <p><strong>Distance:</strong> 100 miles</p>
                 <p><strong>Terrain:</strong> Flat coastal trails (85% grass/dirt)</p>
                 <p><strong>Purpose:</strong> GOAL RACE!</p>
@@ -400,23 +401,23 @@
     </div>
     
     <div class="training-zones">
-        <div class="zones-title">UPHILL ATHLETE TRAINING ZONES</div>
-        <div class="zone-item zone-1">Zone 1 (Pure Aerobic): <144 bpm - Nose breathing only</div>
-        <div class="zone-item zone-2">Zone 2 (Minimize): 145-167 bpm - "No Man's Land"</div>
-        <div class="zone-item zone-3">Zone 3 (High Intensity): >168 bpm - Above lactate threshold</div>
-        <div class="zone-item">AeT (Aerobic Threshold): 144 bpm | AnT (Anaerobic): 168 bpm</div>
-        <div class="zone-item">Five Rivers Adaptation: Flat terrain endurance + coastal wind resistance</div>
+        <div class="zones-title">EVOKE ENDURANCE TRAINING ZONES (Tom Evans Method)</div>
+        <div class="zone-item zone-1">Zone 1 (Aerobic Base): <144 bpm - Nose breathing, conversational</div>
+        <div class="zone-item zone-2">Zone 2 (Threshold): 145-167 bpm - Upper aerobic limit</div>
+        <div class="zone-item zone-3">ME Sessions: Muscular Endurance - weighted uphill without lactate</div>
+        <div class="zone-item">80/20 Rule: 80% easy aerobic base, 20% threshold + ME work</div>
+        <div class="zone-item">Five Rivers Focus: Flat terrain endurance + fatigue resistance</div>
     </div>
     
     <div class="controls">
         <div class="phase-selector">
             <button class="phase-btn active" onclick="showPhase('all')">All Weeks</button>
-            <button class="phase-btn" onclick="showPhase('phase1')">Aerobic Base (1-8)</button>
-            <button class="phase-btn" onclick="showPhase('phase2')">AeT Development (9-16)</button>
-            <button class="phase-btn" onclick="showPhase('phase3')">Christmas (17-20)</button>
-            <button class="phase-btn" onclick="showPhase('phase4')">Build (21-28)</button>
-            <button class="phase-btn" onclick="showPhase('phase5')">Peak (29-35)</button>
-            <button class="phase-btn" onclick="showPhase('phase6')">Taper (36-41)</button>
+            <button class="phase-btn" onclick="showPhase('phase1')">Base Building (1-8)</button>
+            <button class="phase-btn" onclick="showPhase('phase2')">Threshold Dev (9-16)</button>
+            <button class="phase-btn" onclick="showPhase('phase3')">Speed Reserve (17-24)</button>
+            <button class="phase-btn" onclick="showPhase('phase4')">ME Development (25-32)</button>
+            <button class="phase-btn" onclick="showPhase('phase5')">Race Specific (33-35)</button>
+            <button class="phase-btn" onclick="showPhase('phase6')">Taper (36-37)</button>
         </div>
         <div>
             <button class="export-btn" onclick="exportToCSV()">Export to CSV</button>
@@ -637,10 +638,10 @@
             </div>
             
             <div style="background: #e1f5fe; padding: 15px; border-radius: 8px; margin-top: 20px;">
-                <h4 style="color: #01579b; margin-top: 0;">Potential Southwest/Wales B Race Options (4th-5th April 2026)</h4>
+                <h4 style="color: #01579b; margin-top: 0;">Potential Southwest/Wales B Race Options (2nd-8th March 2026)</h4>
                 <p style="font-size: 14px; margin-bottom: 15px;"><em>Monitor these race series for 2026 calendar releases:</em></p>
                 <ul style="font-size: 14px;">
-                    <li><strong>Endurancelife Pembrokeshire CTS:</strong> Often early April, coastal Wales, multiple distances including ultra</li>
+                    <li><strong>Endurancelife Pembrokeshire CTS:</strong> Often early spring, coastal Wales, multiple distances including ultra</li>
                     <li><strong>Welsh 1000m Peaks Race:</strong> Typically spring dates, Snowdonia, 50+ mile challenge</li>
                     <li><strong>Brecon Beacons Ultra:</strong> Spring mountain ultra, various distances, dramatic terrain</li>
                     <li><strong>Exmoor Coast Ultra:</strong> Devon/Somerset border, coastal and moorland, 50-mile option</li>
@@ -649,7 +650,7 @@
                     <li><strong>MudCrew Events:</strong> Various Southwest locations, ultra distances, professional organization</li>
                 </ul>
                 <p style="font-size: 13px; color: #666; margin-top: 15px;">
-                    <strong>Action Plan:</strong> Monitor race calendars from January 2026 onwards. Book immediately when suitable race appears on 4th-5th April. 
+                    <strong>Action Plan:</strong> Monitor race calendars from January 2026 onwards. Book immediately when suitable race appears on 2nd-8th March. 
                     Have backup FKT challenge ready if no races available on exact dates.
                 </p>
             </div>
@@ -659,7 +660,7 @@
                 <ul style="font-size: 14px;">
                     <li><strong>Reconnaissance:</strong> Walk/jog key sections beforehand to identify potential issues</li>
                     <li><strong>Support Strategy:</strong> Position crew at accessible points, not every mile</li>
-                    <li><strong>Nutrition Testing:</strong> Use FKT attempt to test SDW100 fueling strategy</li>
+                    <li><strong>Nutrition Testing:</strong> Use FKT attempt to test 5 Rivers fueling strategy</li>
                     <li><strong>Weather Windows:</strong> Choose optimal conditions for best chance of success</li>
                     <li><strong>Local Knowledge:</strong> Use your Devon advantage - you know the terrain!</li>
                     <li><strong>Backup Plans:</strong> Have shorter routes ready if conditions deteriorate</li>
@@ -682,12 +683,12 @@
             <span>Back-to-Back</span>
         </div>
         <div class="legend-item">
-            <div class="legend-color aet-session"></div>
-            <span>AeT Session</span>
+            <div class="legend-color me-session"></div>
+            <span>ME Sessions</span>
         </div>
         <div class="legend-item">
-            <div class="legend-color zone3-session"></div>
-            <span>Zone 3 Intervals</span>
+            <div class="legend-color threshold-session"></div>
+            <span>Threshold Work</span>
         </div>
         <div class="legend-item">
             <div class="legend-color devon-race"></div>
@@ -708,218 +709,208 @@
     </div>
 
     <script>
+        // Local storage functions for persistent checkboxes
+        function saveCheckboxState(week, day, checked) {
+            var key = 'training_checkbox_w' + week + '_d' + day;
+            localStorage.setItem(key, checked);
+        }
+        
+        function loadCheckboxState(week, day) {
+            var key = 'training_checkbox_w' + week + '_d' + day;
+            return localStorage.getItem(key) === 'true';
+        }
+        
         var trainingData = [
-            // Phase 1: Aerobic Base Development (Weeks 1-8)
+            // Phase 1: Base Building (Weeks 1-8)
             {week: 1, phase: 'phase1', dates: '1st-7th Sep', hours: '6.0', 
-             sun: '1:00 Pure Z1 (TRAINING STARTS)', mon: 'REST', tue: '1:00 Pure Z1 + 4x30s strides', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '1:30 Long Pure Z1 (20min hiking)', sat: '1:30 Pure Z1', 
-             notes: 'Pure aerobic base, establish baseline. Start conservative.', type: 'normal'},
+             sun: '1:00 Easy Z1 (TRAINING STARTS)', mon: 'REST', tue: '1:00 Easy Z1 + 4x30s strides', 
+             wed: '1:00 Easy Z1', thu: 'REST', fri: '1:30 Easy Z1 (20min hiking)', sat: '1:30 Easy Z1', 
+             notes: 'Base building begins. Establish aerobic foundation.', type: 'normal'},
             
             {week: 2, phase: 'phase1', dates: '8th-14th Sep', hours: '6.5', 
-             sun: '1:00 Pure Z1', mon: 'REST', tue: '1:00 Pure Z1 + 6x30s strides', 
-             wed: '1:00 Pure Z1', thu: 'REST or 30min walk', fri: '1:45 Long Pure Z1 (25min hiking)', sat: '1:45 Pure Z1', 
-             notes: 'Gentle volume increase. Focus on aerobic adaptation.', type: 'normal'},
+             sun: '1:00 Easy Z1', mon: 'REST', tue: '1:00 Easy Z1 + 6x30s strides', 
+             wed: '1:00 Easy Z1', thu: 'REST or 30min walk', fri: '1:45 Easy Z1 (25min hiking)', sat: '1:45 Easy Z1', 
+             notes: 'Gentle volume increase. Focus on consistency.', type: 'normal'},
             
             {week: 3, phase: 'phase1', dates: '15th-21st Sep', hours: '7.0', 
-             sun: '1:00 Pure Z1 + 4x90s Z3 (2min rec)', mon: 'REST', tue: '1:00 Pure Z1 + 6x30s strides', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '2:00 Long Pure Z1 (30min hiking)', sat: '2:00 Pure Z1', 
-             notes: 'First Z3 intervals. Keep intensity sessions short.', type: 'normal'},
+             sun: '1:00 Easy Z1', mon: 'REST', tue: '1:00 Easy Z1 + 6x30s strides', 
+             wed: '1:00 Easy Z1', thu: 'REST', fri: '2:00 Easy Z1 (30min hiking)', sat: '2:00 Easy Z1', 
+             notes: 'Building aerobic capacity systematically.', type: 'normal'},
             
             {week: 4, phase: 'phase1', dates: '22nd-28th Sep', hours: '7.5', 
-             sun: '1:00 Pure Z1 + 5x2min Z3 (90s rec)', mon: 'REST', tue: '1:00 Pure Z1 + strides', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '2:15 Long Pure Z1 (35min hiking)', sat: '2:15 Pure Z1', 
-             notes: 'Slightly longer Z3 intervals. Maintain aerobic focus.', type: 'normal'},
+             sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Easy Z1 + strides', 
+             wed: '1:00 Easy Z1', thu: 'REST', fri: '2:15 Easy Z1 (35min hiking)', sat: '2:15 Easy Z1', 
+             notes: 'Add strength training. Maintain aerobic focus.', type: 'normal'},
             
             {week: 5, phase: 'phase1', dates: '29th Sep-5th Oct', hours: '8.0', 
-             sun: '1:00 AEROBIC DECOUPLING TEST', mon: 'REST', tue: '1:00 Pure Z1 + strides', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '2:30 Long Pure Z1 (40min hiking)', sat: '2:30 Pure Z1', 
-             notes: 'TESTING WEEK - Monitor HR drift. Establish baseline metrics.', type: 'testing'},
+             sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Easy Z1 + strides', 
+             wed: '1:00 Easy Z1', thu: 'REST', fri: '2:30 Easy Z1 (40min hiking)', sat: '2:30 Easy Z1', 
+             notes: 'Steady progression. Monitor recovery.', type: 'normal'},
             
             {week: 6, phase: 'phase1', dates: '6th-12th Oct', hours: '8.5', 
-             sun: '1:00 Pure Z1 + 6x90s Z3 (90s rec)', mon: 'REST', tue: '1:00 Pure Z1 + strides', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '2:45 Long Pure Z1 (45min hiking)', sat: '2:45 Pure Z1', 
-             notes: 'Volume building steadily. Maintain intensity discipline.', type: 'normal'},
+             sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Easy Z1 + strides', 
+             wed: '1:00 Easy Z1', thu: 'REST', fri: '2:45 Easy Z1 (45min hiking)', sat: '2:45 Easy Z1', 
+             notes: 'Volume building steadily. Prepare for threshold.', type: 'normal'},
             
             {week: 7, phase: 'phase1', dates: '13th-19th Oct', hours: '9.0', 
-             sun: '1:00 Pure Z1 + 8x90s Z3 (60s rec)', mon: 'REST', tue: '1:00 Pure Z1 + strides', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:00 Long Pure Z1 (50min hiking)', sat: '3:00 Pure Z1', 
-             notes: 'Peak base phase volume. Prepare for recovery week.', type: 'normal'},
+             sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Easy Z1 + strides', 
+             wed: '1:00 Easy Z1', thu: 'REST', fri: '3:00 Easy Z1 (50min hiking)', sat: '3:00 Easy Z1', 
+             notes: 'Peak base phase volume. Solid foundation built.', type: 'normal'},
             
             {week: 8, phase: 'phase1', dates: '20th-26th Oct', hours: '7.0', 
-             sun: '1:00 Pure Z1 + 4x30s strides', mon: 'REST', tue: '1:00 Pure Z1 + strides', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '2:00 Long Pure Z1 (35min hiking)', sat: '2:00 Pure Z1', 
-             notes: 'RECOVERY WEEK - Absorb adaptations from base phase.', type: 'recovery'},
+             sun: '1:00 Easy Z1 + 4x30s strides', mon: 'REST', tue: '1:00 Easy Z1 + strides', 
+             wed: '1:00 Easy Z1', thu: 'REST', fri: '2:00 Easy Z1 (35min hiking)', sat: '2:00 Easy Z1', 
+             notes: 'RECOVERY WEEK - Absorb base training adaptations.', type: 'recovery'},
             
-            // Phase 2: AeT Development (Weeks 9-16)
+            // Phase 2: Threshold Development (Weeks 9-16)
             {week: 9, phase: 'phase2', dates: '27th Oct-2nd Nov', hours: '8.5', 
-             sun: '1:00 Pure Z1 + 4x4min Z3 (2min rec)', mon: 'REST', tue: '1:00 AeT Dev (6x6min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:00 Long Pure Z1 (55min hiking)', sat: '2:30 Pure Z1 (B2B)', 
-             notes: 'Introduce AeT development and B2B training carefully.', type: 'normal'},
+             sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Threshold (6x6min @144bpm, 90s rec)', 
+             wed: '1:00 Easy Z1', thu: 'REST', fri: '3:00 Easy Z1 (55min hiking)', sat: '2:30 Easy Z1 (B2B)', 
+             notes: 'Introduce threshold work. Tom Evans method begins.', type: 'normal'},
             
             {week: 10, phase: 'phase2', dates: '3rd-9th Nov', hours: '9.0', 
-             sun: '1:00 Pure Z1 + 5x3min Z3 (90s rec)', mon: 'REST', tue: '1:00 AeT Dev (4x10min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:15 Long Pure Z1 (60min hiking)', sat: '2:45 Pure Z1 (B2B)', 
-             notes: 'Build AeT capacity. Monitor HR drift in AeT sessions.', type: 'normal'},
+             sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Threshold (4x10min @144bpm, 2min rec)', 
+             wed: '1:00 Easy Z1', thu: 'REST', fri: '3:15 Easy Z1 (60min hiking)', sat: '2:45 Easy Z1 (B2B)', 
+             notes: 'Build threshold capacity. Monitor HR drift.', type: 'normal'},
             
             {week: 11, phase: 'phase2', dates: '10th-16th Nov', hours: '8.0', 
-             sun: '1:00 Pure Z1 recovery', mon: 'REST', tue: '45min Pure Z1 easy', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '45min Easy Z1 (pre-race)', sat: 'RACE: East Devon 8 Trigs Ultra (53K)', 
+             sun: '1:00 Easy Z1 recovery', mon: 'REST', tue: '45min Easy Z1 easy', 
+             wed: '1:00 Easy Z1', thu: 'REST', fri: '45min Easy Z1 (pre-race)', sat: 'RACE: East Devon 8 Trigs Ultra (53K)', 
              notes: 'C RACE WEEK - East Devon 8 Trigs Ultra. Navigation practice.', type: 'devon-race'},
             
             {week: 12, phase: 'phase2', dates: '17th-23rd Nov', hours: '9.5', 
-             sun: '1:00 Pure Z1 + 8x2min Z3 (60s rec)', mon: 'REST', tue: '1:00 AeT Dev (2x20min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:30 Long Pure Z1 (70min hiking)', sat: '3:00 Pure Z1 (B2B)', 
-             notes: 'Post-race integration. Resume AeT development.', type: 'normal'},
+             sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Threshold (2x20min @144bpm, 3min rec)', 
+             wed: '1:00 Easy Z1', thu: 'REST', fri: '3:30 Easy Z1 (70min hiking)', sat: '3:00 Easy Z1 (B2B)', 
+             notes: 'Post-race recovery. Resume threshold development.', type: 'normal'},
             
             {week: 13, phase: 'phase2', dates: '24th-30th Nov', hours: '10.0', 
-             sun: '1:00 AEROBIC DECOUPLING TEST + 6x90s Z3', mon: 'REST', tue: '1:00 AeT Dev (4x8min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:45 Long Pure Z1 (75min hiking)', sat: '3:15 Pure Z1 (B2B)', 
-             notes: 'TESTING WEEK - Compare to Week 5. Assess AeT progress.', type: 'testing'},
+             sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Threshold (4x8min @144bpm, 90s rec)', 
+             wed: '1:00 Easy Z1', thu: 'REST', fri: '3:45 Easy Z1 (75min hiking)', sat: '3:15 Easy Z1 (B2B)', 
+             notes: 'Threshold development continues. Build speed reserve.', type: 'normal'},
             
             {week: 14, phase: 'phase2', dates: '1st-7th Dec', hours: '10.5', 
-             sun: '1:00 Pure Z1 + 10x90s Z3 (45s rec)', mon: 'REST', tue: '1:00 AeT Dev (1x30min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '4:00 Long Pure Z1 (80min hiking)', sat: '3:30 Pure Z1 (B2B)', 
-             notes: 'Longer AeT blocks. Building endurance at threshold.', type: 'normal'},
+             sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Threshold (1x30min @144bpm)', 
+             wed: '1:00 Easy Z1', thu: 'REST', fri: '4:00 Easy Z1 (80min hiking)', sat: '3:30 Easy Z1 (B2B)', 
+             notes: 'Longer threshold blocks. Endurance at speed.', type: 'normal'},
             
             {week: 15, phase: 'phase2', dates: '8th-14th Dec', hours: '11.0', 
-             sun: '1:00 Pure Z1 + 5x4min Z3 (2min rec)', mon: 'REST', tue: '1:00 AeT Dev (3x10min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '4:15 Long Pure Z1 (85min hiking)', sat: '3:45 Pure Z1 (B2B)', 
-             notes: 'Peak AeT development phase. Monitor fatigue closely.', type: 'normal'},
+             sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Threshold (3x10min @144bpm, 2min rec)', 
+             wed: '1:00 Easy Z1', thu: 'REST', fri: '4:15 Easy Z1 (85min hiking)', sat: '3:45 Easy Z1 (B2B)', 
+             notes: 'Peak threshold development phase. Maintain focus.', type: 'normal'},
             
             {week: 16, phase: 'phase2', dates: '15th-21st Dec', hours: '8.5', 
-             sun: '1:00 Pure Z1 + 4x30s strides', mon: 'REST', tue: '1:00 Pure Z1 + strides', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:00 Long Pure Z1 (60min hiking)', sat: '2:30 Pure Z1', 
+             sun: '1:00 Easy Z1 + 4x30s strides', mon: 'REST', tue: '1:00 Easy Z1 + strides', 
+             wed: '1:00 Easy Z1', thu: 'REST', fri: '3:00 Easy Z1 (60min hiking)', sat: '2:30 Easy Z1', 
              notes: 'RECOVERY WEEK - Prepare for Christmas period.', type: 'recovery'},
             
-            // Phase 3: Christmas Maintenance (Weeks 17-20)
+            // Phase 3: Speed Reserve Development (Weeks 17-24)
             {week: 17, phase: 'phase3', dates: '22nd-28th Dec', hours: '7.0', 
-             sun: '1:00 Pure Z1', mon: 'REST', tue: '1:00 Pure Z1 + strides', 
-             wed: 'REST (Christmas Day)', thu: '1:00 Pure Z1 (Boxing Day)', fri: 'REST', sat: '3:00 Long Pure Z1 (45min hiking)', 
+             sun: '1:00 Easy Z1', mon: 'REST', tue: '1:00 Easy Z1 + strides', 
+             wed: 'REST (Christmas Day)', thu: '1:00 Easy Z1 (Boxing Day)', fri: 'REST', sat: '3:00 Easy Z1 (45min hiking)', 
              notes: 'Christmas Week - maintain fitness, enjoy festivities.', type: 'christmas'},
             
             {week: 18, phase: 'phase3', dates: '29th Dec-4th Jan', hours: '7.5', 
-             sun: '1:00 Pure Z1', mon: 'REST', tue: 'REST (New Years Day)', 
-             wed: '1:00 Pure Z1 + strides', thu: '1:00 Pure Z1', fri: 'REST', sat: '3:30 Long Pure Z1 (50min hiking)', 
+             sun: '1:00 Easy Z1', mon: 'REST', tue: 'REST (New Years Day)', 
+             wed: '1:00 Easy Z1 + strides', thu: '1:00 Easy Z1', fri: 'REST', sat: '3:30 Easy Z1 (50min hiking)', 
              notes: 'New Year Week - gradual return to training.', type: 'christmas'},
             
-            {week: 19, phase: 'phase3', dates: '5th-11th Jan', hours: '8.0', 
-             sun: '1:00 Pure Z1 + 4x2min Z3 (90s rec)', mon: 'REST', tue: '1:00 Pure Z1 + strides', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:00 Long Pure Z1 (55min hiking)', sat: '2:30 Pure Z1', 
-             notes: 'Build restart - reintroduce intensity carefully.', type: 'normal'},
+            {week: 19, phase: 'phase3', dates: '5th-11th Jan', hours: '8.5', 
+             sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Tempo (5x1km, 2min rec)', 
+             wed: '1:00 Easy Z1', thu: 'REST', fri: '3:00 Easy Z1 (55min hiking)', sat: '2:30 Easy Z1', 
+             notes: 'Speed work introduction. Build speed reserve.', type: 'normal'},
             
-            {week: 20, phase: 'phase3', dates: '12th-18th Jan', hours: '8.5', 
-             sun: '1:00 Pure Z1 + 5x2min Z3 (75s rec)', mon: 'REST', tue: '1:00 AeT Dev (4x6min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:15 Long Pure Z1 (60min hiking)', sat: '2:45 Pure Z1 (B2B)', 
-             notes: 'Resume AeT work. Prepare for serious build phase.', type: 'normal'},
+            {week: 20, phase: 'phase3', dates: '12th-18th Jan', hours: '9.0', 
+             sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Track (8x800m, 90s rec)', 
+             wed: '1:00 Easy Z1', thu: 'REST', fri: '3:15 Easy Z1 (60min hiking)', sat: '2:45 Easy Z1 (B2B)', 
+             notes: 'Track work for speed development. Tom Evans approach.', type: 'normal'},
             
-            // Phase 4: Serious Build Phase (Weeks 21-28)
-            {week: 21, phase: 'phase4', dates: '19th-25th Jan', hours: '9.0', 
-             sun: '1:00 Pure Z1 + 6x3min Z3 (90s rec)', mon: 'REST', tue: '1:00 AeT Dev (3x8min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:30 Long Pure Z1 (65min hiking)', sat: '3:00 Pure Z1 (B2B)', 
-             notes: 'Serious build begins. Maintain polarized discipline.', type: 'normal'},
+            {week: 21, phase: 'phase3', dates: '19th-25th Jan', hours: '9.5', 
+             sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Tempo (6x1km, 90s rec)', 
+             wed: '1:00 Easy Z1', thu: 'REST', fri: '3:30 Easy Z1 (65min hiking)', sat: '3:00 Easy Z1 (B2B)', 
+             notes: 'Speed reserve building continues systematically.', type: 'normal'},
             
-            {week: 22, phase: 'phase4', dates: '26th Jan-1st Feb', hours: '8.5', 
-             sun: '1:00 Pure Z1 recovery', mon: 'REST', tue: '45min Pure Z1 easy', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '45min Easy Z1 (pre-FKT)', sat: 'FKT ATTEMPT: East Devon Route (50K+)', 
+            {week: 22, phase: 'phase3', dates: '26th Jan-1st Feb', hours: '8.5', 
+             sun: '1:00 Easy Z1 recovery', mon: 'REST', tue: '45min Easy Z1 easy', 
+             wed: '1:00 Easy Z1', thu: 'REST', fri: '45min Easy Z1 (pre-FKT)', sat: 'FKT ATTEMPT: East Devon Route (50K+)', 
              notes: 'FKT CHALLENGE WEEK - East Devon 50K+ attempt.', type: 'devon-race'},
             
-            {week: 23, phase: 'phase4', dates: '2nd-8th Feb', hours: '9.5', 
-             sun: '1:00 Pure Z1 + 10x90s Z3 (45s rec)', mon: 'REST', tue: '1:00 AeT Dev (1x25min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '3:45 Long Pure Z1 (70min hiking)', sat: '3:15 Pure Z1 (B2B)', 
-             notes: 'Post-FKT recovery. Resume build progression.', type: 'normal'},
+            {week: 23, phase: 'phase3', dates: '2nd-8th Feb', hours: '10.0', 
+             sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Track (10x400m, 60s rec)', 
+             wed: '1:00 Easy Z1', thu: 'REST', fri: '3:45 Easy Z1 (70min hiking)', sat: '3:15 Easy Z1 (B2B)', 
+             notes: 'Post-FKT recovery. Resume speed development.', type: 'normal'},
             
-            {week: 24, phase: 'phase4', dates: '9th-15th Feb', hours: '10.0', 
-             sun: '1:00 Pure Z1 + 8x3min Z3 (75s rec)', mon: 'REST', tue: '1:00 AeT Dev (2x15min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '4:00 Long Pure Z1 (75min hiking)', sat: '3:30 Pure Z1 (B2B)', 
-             notes: 'Structured build progression. Monitor recovery.', type: 'normal'},
+            {week: 24, phase: 'phase3', dates: '9th-15th Feb', hours: '10.5', 
+             sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:00 Threshold (2x15min @144bpm, 3min rec)', 
+             wed: '1:00 Easy Z1', thu: 'REST', fri: '4:00 Easy Z1 (75min hiking)', sat: '3:30 Easy Z1 (B2B)', 
+             notes: 'Speed reserve phase complete. Prepare for ME work.', type: 'normal'},
             
-            {week: 25, phase: 'phase4', dates: '16th-22nd Feb', hours: '10.5', 
-             sun: '1:00 AEROBIC DECOUPLING TEST + 8x90s Z3', mon: 'REST', tue: '1:00 AeT Dev (3x10min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '4:15 Long Pure Z1 (80min hiking)', sat: '3:45 Pure Z1 (B2B)', 
-             notes: 'TESTING WEEK - Mid-build assessment. Check progress.', type: 'testing'},
+            // Phase 4: Muscular Endurance Development (Weeks 25-32)
+            {week: 25, phase: 'phase4', dates: '16th-22nd Feb', hours: '11.0', 
+             sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:30 ME SESSION (12kg vest, treadmill 25% grade, 1000m vert)', 
+             wed: '1:00 Easy Z1 RECOVERY', thu: 'REST', fri: '4:15 Easy Z1 (80min hiking)', sat: '3:45 Easy Z1 (B2B)', 
+             notes: 'EVOKE ME TRAINING BEGINS - Revolutionary fatigue resistance method.', type: 'normal'},
             
-            {week: 26, phase: 'phase4', dates: '23rd Feb-1st Mar', hours: '11.0', 
-             sun: '1:00 Pure Z1 + 6x5min Z3 (2min rec)', mon: 'REST', tue: '1:00 AeT Dev (1x35min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '4:30 Long Pure Z1 (85min hiking)', sat: '4:00 Pure Z1 (B2B)', 
-             notes: 'Peak build intensity. Longer Z3 intervals introduced.', type: 'normal'},
+            {week: 26, phase: 'phase4', dates: '23rd Feb-1st Mar', hours: '11.5', 
+             sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:30 ME SESSION (weighted uphill + threshold descent)', 
+             wed: '1:00 Easy Z1 RECOVERY', thu: 'REST', fri: '4:30 Easy Z1 (85min hiking)', sat: '4:00 Easy Z1 (B2B)', 
+             notes: 'ME development continues. Build muscular durability.', type: 'normal'},
             
-           {week: 27, phase: 'phase4', dates: '2nd-8th Mar', hours: '9.0', 
-             sun: '1:00 Pure Z1 recovery', mon: 'REST', tue: '45min Pure Z1 easy', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '45min Easy Z1 + race prep', sat: 'RACE: Southwest/Wales Ultra (50M-100K)', 
-             notes: 'B RACE WEEK - Southwest/Wales Ultra dress rehearsal (moved earlier).', type: 'devon-race'},
+            {week: 27, phase: 'phase4', dates: '2nd-8th Mar', hours: '9.0', 
+             sun: '1:00 Easy Z1 recovery', mon: 'REST', tue: '45min Easy Z1 easy', 
+             wed: '1:00 Easy Z1', thu: 'REST', fri: '45min Easy Z1 + race prep', sat: 'RACE: Southwest/Wales Ultra (50M-100K)', 
+             notes: 'B RACE WEEK - Southwest/Wales Ultra dress rehearsal.', type: 'devon-race'},
             
             {week: 28, phase: 'phase4', dates: '9th-15th Mar', hours: '7.5', 
-             sun: '1:00 Pure Z1 + 4x90s Z3 (90s rec)', mon: 'REST', tue: '45min Pure Z1 easy recovery', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '2:30 Long Pure Z1 (45min hiking)', sat: '2:00 Pure Z1', 
+             sun: '1:00 Easy Z1', mon: 'REST', tue: '45min Easy Z1 easy recovery', 
+             wed: '1:00 Easy Z1', thu: 'REST', fri: '2:30 Easy Z1 (45min hiking)', sat: '2:00 Easy Z1', 
              notes: 'Post-B race recovery. Resume training gradually.', type: 'recovery'},
             
-            // Phase 5: Extended Peak Phase (Weeks 29-34) - Proper peak development
-            {week: 29, phase: 'phase5', dates: '16th-22nd Mar', hours: '10.0', 
-             sun: '1:00 Pure Z1 + 6x3min Z3 (90s rec)', mon: 'REST', tue: '1:00 AeT Dev (3x8min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '4:00 Long Pure Z1 (30min hiking)', sat: '3:30 Pure Z1 (B2B)', 
-             notes: 'Peak phase begins post-B race. Build systematically.', type: 'peak'},
+            {week: 29, phase: 'phase4', dates: '16th-22nd Mar', hours: '11.5', 
+             sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:30 ME SESSION (Tom Evans method: weighted uphill tempo)', 
+             wed: '1:00 Easy Z1 RECOVERY', thu: 'REST', fri: '4:30 Easy Z1 (60min hiking)', sat: '4:00 Easy Z1 (B2B)', 
+             notes: 'ME development resumes post-B race. Peak training ahead.', type: 'normal'},
             
-            {week: 30, phase: 'phase5', dates: '23rd-29th Mar', hours: '11.0', 
-             sun: '1:00 Pure Z1 + 8x3min Z3 (75s rec)', mon: 'REST', tue: '1:00 AeT Dev (2x15min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '4:30 Long Pure Z1 (45min hiking)', sat: '4:00 Pure Z1 (B2B)', 
-             notes: 'Peak development continues. Monitor recovery carefully.', type: 'peak'},
+            {week: 30, phase: 'phase4', dates: '23rd-29th Mar', hours: '12.0', 
+             sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:30 ME SESSION (double ME: AM weighted, PM threshold)', 
+             wed: '1:00 Easy Z1 RECOVERY', thu: 'REST', fri: '4:45 Easy Z1 (75min hiking)', sat: '4:15 Easy Z1 (B2B)', 
+             notes: 'Double ME sessions introduced. Peak ME development.', type: 'normal'},
             
-            {week: 31, phase: 'phase5', dates: '30th Mar-5th Apr', hours: '12.0', 
-             sun: '1:00 Pure Z1 + 5x6min Z3 (2min rec)', mon: 'REST', tue: '1:15 AeT Dev (1x40min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '5:00 Long Pure Z1 (30min hiking)', sat: '4:30 Pure Z1 (B2B)', 
-             notes: 'Higher peak volume. Flat terrain focus for Five Rivers.', type: 'peak'},
+            {week: 31, phase: 'phase4', dates: '30th Mar-5th Apr', hours: '12.5', 
+             sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:45 ME SESSION (peak ME work: 15kg vest, 1200m vert)', 
+             wed: '1:00 Easy Z1 RECOVERY', thu: 'REST', fri: '5:00 Easy Z1 (90min hiking)', sat: '4:30 Easy Z1 (B2B)', 
+             notes: 'Peak ME training. Tom Evans UTMB-winning method.', type: 'normal'},
             
-            {week: 32, phase: 'phase5', dates: '6th-12th Apr', hours: '12.5', 
-             sun: '1:00 Pure Z1 + 8x4min Z3 (90s rec)', mon: 'REST', tue: '1:15 AeT Dev (3x15min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '5:15 Long Pure Z1 (45min hiking)', sat: '4:45 Pure Z1 (B2B)', 
-             notes: 'Near-peak volume. Sustained endurance emphasis.', type: 'peak'},
+            {week: 32, phase: 'phase4', dates: '6th-12th Apr', hours: '13.0', 
+             sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:45 ME SESSION (weekly for 7 weeks method)', 
+             wed: '1:00 Easy Z1 RECOVERY', thu: 'REST', fri: '5:15 Easy Z1 (45min hiking)', sat: '4:45 Easy Z1 (B2B)', 
+             notes: 'Peak ME phase continues. Muscular endurance maximized.', type: 'normal'},
             
-            {week: 33, phase: 'phase5', dates: '13th-19th Apr', hours: '13.0', 
-             sun: '1:00 Pure Z1 + 6x8min Z3 (2min rec)', mon: 'REST', tue: '1:15 AeT Dev (1x50min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '5:30 Long Pure Z1 (60min hiking)', sat: '5:00 Pure Z1 (B2B)', 
-             notes: 'Peak volume week. Race-specific endurance focus.', type: 'peak'},
+            // Phase 5: Race Specific (Weeks 33-35)
+            {week: 33, phase: 'phase5', dates: '13th-19th Apr', hours: '13.5', 
+             sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:30 ME SESSION (race-specific: flat terrain focus)', 
+             wed: '1:00 Easy Z1 RECOVERY', thu: 'REST', fri: '5:30 Easy Z1 (race pace practice)', sat: '5:00 Easy Z1 (B2B race sim)', 
+             notes: 'PEAK VOLUME WEEK. Race-specific adaptations.', type: 'peak'},
             
-            {week: 34, phase: 'phase5', dates: '20th-26th Apr', hours: '13.5', 
-             sun: '1:00 AEROBIC DECOUPLING TEST + 10x3min Z3 (60s rec)', mon: 'REST', tue: '1:15 AeT Dev (2x25min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '5:45 Long Pure Z1 (45min hiking)', sat: '5:15 Pure Z1 (B2B)', 
-             notes: 'PEAK VOLUME WEEK + Final fitness test. Maximum training load.', type: 'testing'},
+            {week: 34, phase: 'phase5', dates: '20th-26th Apr', hours: '12.5', 
+             sun: '1:00 Easy Z1 + strength', mon: 'REST', tue: '1:30 ME SESSION (final ME peak)', 
+             wed: '1:00 Easy Z1 RECOVERY', thu: 'REST', fri: '5:00 Easy Z1 (race nutrition practice)', sat: '4:30 Easy Z1 (B2B)', 
+             notes: 'Race simulation focus. Fine-tune pacing and nutrition.', type: 'peak'},
             
-            // Phase 6: Proper 4-Week Taper (Weeks 35-37)
-            {week: 35, phase: 'phase6', dates: '27th Apr-3rd May', hours: '11.0', 
-             sun: '1:00 Pure Z1 + 6x3min Z3 (2min rec)', mon: 'REST', tue: '1:00 AeT Dev (1x30min @144bpm)', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '4:30 Long Pure Z1 (30min hiking)', sat: '4:00 Pure Z1 (B2B)', 
-             notes: 'Taper begins. Maintain intensity, reduce volume systematically.', type: 'taper'},
+            {week: 35, phase: 'phase5', dates: '27th Apr-3rd May', hours: '11.0', 
+             sun: '1:00 Easy Z1', mon: 'REST', tue: '1:00 Threshold (3x10min @race pace)', 
+             wed: '1:00 Easy Z1', thu: 'REST', fri: '4:00 Easy Z1 (race pace final hour)', sat: '3:30 Easy Z1 (B2B)', 
+             notes: 'Final race-specific work. Taper preparation begins.', type: 'normal'},
             
+            // Phase 6: Taper (Weeks 36-37)
             {week: 36, phase: 'phase6', dates: '4th-10th May', hours: '8.0', 
-             sun: '1:00 Pure Z1 + 4x90s Z3 (2min rec)', mon: 'REST', tue: '45min Pure Z1 + strides', 
-             wed: '45min Pure Z1', thu: 'REST', fri: '2:30 Long Pure Z1 (15min hiking)', sat: '2:00 Pure Z1', 
-             notes: 'Deep taper. Final preparation and equipment checks.', type: 'taper'},
+             sun: '1:00 Easy Z1 + 4x30s strides', mon: 'REST', tue: '45min Easy Z1 + 4x20s pickups', 
+             wed: '45min Easy Z1', thu: 'REST', fri: '2:30 Easy Z1 (easy pace)', sat: '2:00 Easy Z1', 
+             notes: 'TAPER WEEK. Maintain sharpness, reduce volume.', type: 'taper'},
             
             {week: 37, phase: 'phase6', dates: '11th-17th May', hours: '3.5', 
-             sun: '45min Pure Z1 + 4x30s strides', mon: 'REST', tue: '30min Pure Z1 + 3x20s pickups', 
-             wed: '30min Pure Z1', thu: 'REST', fri: '30min Pure Z1 shakeout OR REST', sat: 'RACE DAY - Five Rivers Ultra 100!', 
-             notes: 'RACE WEEK - Five Rivers Ultra 100. Execute with confidence!', type: 'race'},
-                        
-            // Post-Race Recovery/Maintenance (Weeks 38-41)
-            {week: 38, phase: 'phase6', dates: '18th-24th May', hours: '5.0', 
-             sun: 'REST (Post-race recovery)', mon: 'REST', tue: '30min Easy Z1 if feeling good', 
-             wed: 'REST', thu: '45min Easy Z1 if feeling good', fri: 'REST', sat: '1:00 Easy Z1 recovery jog', 
-             notes: 'POST-RACE RECOVERY - Listen to your body. Celebrate!', type: 'recovery'},
-            
-            {week: 39, phase: 'phase6', dates: '25th-31st May', hours: '6.0', 
-             sun: '45min Easy Z1', mon: 'REST', tue: '45min Easy Z1', 
-             wed: '1:00 Easy Z1', thu: 'REST', fri: '1:00 Easy Z1', sat: '1:30 Easy Z1', 
-             notes: 'Gentle return to training. Assess race lessons learned.', type: 'recovery'},
-            
-            {week: 40, phase: 'phase6', dates: '1st-7th Jun', hours: '7.0', 
-             sun: '1:00 Pure Z1', mon: 'REST', tue: '1:00 Pure Z1 + strides', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '1:30 Pure Z1', sat: '1:30 Pure Z1', 
-             notes: 'Base building restart. Plan next training cycle.', type: 'normal'},
-            
-            {week: 41, phase: 'phase6', dates: '8th-14th Jun', hours: '8.0', 
-             sun: '1:00 Pure Z1 + 4x90s Z3 (2min rec)', mon: 'REST', tue: '1:00 Pure Z1 + strides', 
-             wed: '1:00 Pure Z1', thu: 'REST', fri: '2:00 Long Pure Z1', sat: '2:00 Pure Z1', 
-             notes: 'Structured training resumes. Begin planning next goals.', type: 'normal'}
+             sun: '45min Easy Z1 + 4x30s strides', mon: 'REST', tue: '30min Easy Z1 + 3x20s pickups', 
+             wed: '30min Easy Z1', thu: 'REST', fri: '30min Easy Z1 shakeout OR REST', sat: 'RACE DAY - Five Rivers Ultra 100!', 
+             notes: 'RACE WEEK - Five Rivers Ultra 100. Execute with confidence!', type: 'race'}
         ];
         
         var currentPhase = 'all';
@@ -959,6 +950,8 @@
                     row.classList.add('testing-week');
                 } else if (week.type === 'devon-race') {
                     row.classList.add('devon-race');
+                } else if (week.type === 'taper') {
+                    row.classList.add('peak-week');
                 }
                 
                 function getCellClasses(workout) {
@@ -967,15 +960,15 @@
                     
                     if (workout === 'REST' || workout.indexOf('REST (') !== -1) {
                         classes.push('rest-day');
-                    } else if (workout.indexOf('Long') !== -1) {
+                    } else if (workout.indexOf('Long') !== -1 || workout.indexOf('Easy Z1 (B2B)') !== -1) {
                         classes.push('long-run');
                     } else if (workout.indexOf('B2B') !== -1) {
                         classes.push('back-to-back');
-                    } else if (workout.indexOf('AeT Dev') !== -1) {
-                        classes.push('aet-session');
-                    } else if (workout.indexOf('Z3') !== -1 && workout.indexOf('AeT') === -1) {
-                        classes.push('zone3-session');
-                    } else if (workout.indexOf('Pure Z1') !== -1) {
+                    } else if (workout.indexOf('ME SESSION') !== -1) {
+                        classes.push('me-session');
+                    } else if (workout.indexOf('Threshold') !== -1 || workout.indexOf('Track') !== -1 || workout.indexOf('Tempo') !== -1) {
+                        classes.push('threshold-session');
+                    } else if (workout.indexOf('Easy Z1') !== -1) {
                         classes.push('pure-z1');
                     } else if (workout.indexOf('RACE') !== -1 || workout.indexOf('FKT') !== -1) {
                         classes.push('devon-race');
@@ -983,17 +976,26 @@
                     return classes.join(' ');
                 }
                 
+                var days = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+                var dayHtml = '';
+                
+                for (var j = 0; j < days.length; j++) {
+                    var day = days[j];
+                    var workout = week[day] || 'N/A';
+                    var checkboxId = 'cb_w' + week.week + '_d' + j;
+                    var isChecked = loadCheckboxState(week.week, j);
+                    
+                    dayHtml += '<td class="' + getCellClasses(workout) + '">' +
+                              '<input type="checkbox" class="progress-checkbox" id="' + checkboxId + '" ' +
+                              'onchange="saveCheckboxState(' + week.week + ',' + j + ', this.checked)" ' +
+                              (isChecked ? 'checked' : '') + '>' + workout + '</td>';
+                }
+                
                 row.innerHTML = 
                     '<td class="week-col">Week ' + week.week + '</td>' +
                     '<td class="date-col">' + week.dates + '</td>' +
                     '<td class="hours-col">' + week.hours + '</td>' +
-                    '<td class="' + getCellClasses(week.sun) + '"><input type="checkbox" class="progress-checkbox">' + (week.sun || 'N/A') + '</td>' +
-                    '<td class="' + getCellClasses(week.mon) + '"><input type="checkbox" class="progress-checkbox">' + (week.mon || 'N/A') + '</td>' +
-                    '<td class="' + getCellClasses(week.tue) + '"><input type="checkbox" class="progress-checkbox">' + (week.tue || 'N/A') + '</td>' +
-                    '<td class="' + getCellClasses(week.wed) + '"><input type="checkbox" class="progress-checkbox">' + (week.wed || 'N/A') + '</td>' +
-                    '<td class="' + getCellClasses(week.thu) + '"><input type="checkbox" class="progress-checkbox">' + (week.thu || 'N/A') + '</td>' +
-                    '<td class="' + getCellClasses(week.fri) + '"><input type="checkbox" class="progress-checkbox">' + (week.fri || 'N/A') + '</td>' +
-                    '<td class="' + getCellClasses(week.sat) + '"><input type="checkbox" class="progress-checkbox">' + (week.sat || 'N/A') + '</td>' +
+                    dayHtml +
                     '<td>' + (week.notes || '') + '</td>';
                 
                 tbody.appendChild(row);
@@ -1014,14 +1016,14 @@
                     'Week ' + week.week,
                     '"' + week.dates + '"',
                     week.hours,
-                    '"' + week.sun + '"',
-                    '"' + week.mon + '"',
-                    '"' + week.tue + '"',
-                    '"' + week.wed + '"',
-                    '"' + week.thu + '"',
-                    '"' + week.fri + '"',
-                    '"' + week.sat + '"',
-                    '"' + week.notes + '"'
+                    '"' + (week.sun || '') + '"',
+                    '"' + (week.mon || '') + '"',
+                    '"' + (week.tue || '') + '"',
+                    '"' + (week.wed || '') + '"',
+                    '"' + (week.thu || '') + '"',
+                    '"' + (week.fri || '') + '"',
+                    '"' + (week.sat || '') + '"',
+                    '"' + (week.notes || '') + '"'
                 ];
                 csvContent += row.join(',') + '\n';
             }
@@ -1030,7 +1032,7 @@
             var url = window.URL.createObjectURL(blob);
             var a = document.createElement('a');
             a.href = url;
-            a.download = 'FiveRivers_UA_Training_Plan_' + currentPhase + '.csv';
+            a.download = 'FiveRivers_Evoke_Training_Plan_' + currentPhase + '.csv';
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
@@ -1062,8 +1064,8 @@
                 ['Race', 'Date', 'Distance', 'Location', 'Purpose'],
                 ['East Devon 8 Trigs Ultra', '8th November 2025', '53K', 'East Devon', 'Navigation & terrain prep'],
                 ['East Devon FKT Challenge', '31st Jan/1st Feb 2026', '50K+', 'East Devon', 'Self-supported ultra'],
-                ['Southwest/Wales Ultra', '4th-5th April 2026', '50M-100K', 'Southwest/Wales', 'Dress rehearsal'],
-                ['South Downs Way 100', '13th June 2026', '100 miles', 'Winchester-Eastbourne', 'GOAL RACE']
+                ['Southwest/Wales Ultra', '2nd-8th March 2026', '50M-100K', 'Southwest/Wales', 'Dress rehearsal'],
+                ['Five Rivers Ultra 100', '10th May 2026', '100 miles', 'Essex/Suffolk Coast', 'GOAL RACE']
             ];
             
             var csvContent = raceData.map(function(row) { return row.join(','); }).join('\n');
@@ -1079,6 +1081,7 @@
             window.URL.revokeObjectURL(url);
         }
         
+        // Initialize table on page load
         document.addEventListener('DOMContentLoaded', function() {
             renderTable();
         });
@@ -1097,8 +1100,3 @@
     </script>
 </body>
 </html>
-
-
-
-
-
